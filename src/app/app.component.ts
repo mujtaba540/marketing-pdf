@@ -5,10 +5,10 @@ import { MainComponent } from './pages/properties/components/main/main.component
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MainComponent],
+  imports: [MainComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'sha-pdf';
+  title = 'property-marketing';
 }

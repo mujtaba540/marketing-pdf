@@ -7,10 +7,19 @@
     padding-bottom: 0.2rem
 }
 
+.print-only {
+    display: none;
+  }
 @media print {
     .noprint {
        display:none;
     }
     .page, .page-break { break-after: page; }
+    .print-only {
+        display: block;
+      }
  }
+
+
+
 
