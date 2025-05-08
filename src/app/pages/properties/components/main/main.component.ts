@@ -47,7 +47,7 @@ export class MainComponent {
   ngOnInit(): void {
     this.selectedItemList = APPARTMENTS;
     this.radioOptions = [
-      { value: 'appartment', label: 'Appartment', name: 'apt' },
+      { value: 'appartment', label: 'Apartment', name: 'apt' },
       { value: 'villa', label: 'Villa', name: 'villa' },
     ];
     this.setPropertyForm();
