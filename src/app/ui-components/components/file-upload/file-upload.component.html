@@ -1,0 +1,6 @@
+<div class="upload-div" (click)="onClick()" (dragenter)="onDragEnter($event)" (dragover)="onDragOver($event)"
+    (dragleave)="onDragLeave($event)" (drop)="onDrop($event)" [ngClass]="{'disabled-text':disabled()}">
+    Drop files here to upload or&nbsp;
+    <span class="text-decoration-underline">choose file</span>
+</div>
+<input type="file" #fileInput [accept]="accept()" (change)="onFileSelected($event)" [multiple]="multiple()" hidden [disabled]="disabled()">

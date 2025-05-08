@@ -1,0 +1,13 @@
+<span class="vstack gap-2">
+    <label class="form-label m-0 fw-bold">{{label()}}</label>
+    @if (!isLoading) {
+    <img [src]="imgSrc" class="img-thumbnail rounded img-icon cursor-pointer"
+        [alt]="label()" />
+    }
+    @else {
+    <div class="spinner-border spinner-border-sm" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    }
+
+</span>

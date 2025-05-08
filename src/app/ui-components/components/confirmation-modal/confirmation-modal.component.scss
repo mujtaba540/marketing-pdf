@@ -1,0 +1,14 @@
+.danger-icon {
+  border: 1.5px solid var(--red-shade);
+  border-radius: 50%;
+  padding: 1rem 2rem;
+}
+
+.label-text {
+  width: min(90%, 20ch);
+  text-align: center;
+}
+
+.w-10-rem {
+  width: 10rem;
+}

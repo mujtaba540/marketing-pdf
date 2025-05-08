@@ -1,0 +1,13 @@
+<div class="d-flex flex-column justify-content-center align-items-center modal-body gap-3" aria-hidden="false"
+    aria-modal="true">
+    <div class="danger-icon">
+        <i class="fa-solid fa-exclamation text-danger h2 m-auto"></i>
+    </div>
+    <h5 class="label-text">{{modalLabel}}</h5>
+    <div class="d-flex justify-content-center align-items-center gap-2">
+        <app-button [label]="'Yes'" [classList]="'btn-primary w-6rem font-12'"
+            (onClick)="closeModal(actions.CONFIRM)" />
+        <app-button [label]="'Cancel'" [classList]="'btn-outline-warning w-6rem font-12'"
+            (onClick)="closeModal(actions.CLOSE)" />
+    </div>
+</div>

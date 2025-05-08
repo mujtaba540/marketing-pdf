@@ -1,0 +1,10 @@
+<div class="avatar-stack justify-content-start flex-row">
+  <span class="avatar" [class]="avatarClassList()">
+    @if(item().icon){
+    <i [class]="item().icon"></i>
+    }@else {
+    {{ item()?.name ? item()?.name[0] :'N/A' }}
+    }
+  </span>
+
+</div>

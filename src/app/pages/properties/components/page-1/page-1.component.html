@@ -1,0 +1,28 @@
+<div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Apartment Number</th>
+          <th scope="col">Floor</th>
+          <th scope="col">Bedroom</th>
+          <!-- <th scope="col">Apartment Type</th> -->
+          <th scope="col">GSA (SQM)</th>
+          <th scope="col">50/50 - Payment Plan - Price in AED</th>
+          <th scope="col">70/30 with 2-Year
+            Post Handover
+            Price in AED</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{selectedProperty()?.unit_code}}</td>
+          <td>{{selectedProperty()?.floor}}</td>
+          <td>{{selectedProperty()?.bedrooms}}</td>
+          <td>{{selectedProperty()?.total_sqft}}</td>
+          <td>{{selectedProperty()?.full_payment_completion}}</td>
+          <td>{{selectedProperty()?.year_payment_plan}}</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>

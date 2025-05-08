@@ -1,0 +1,48 @@
+.avatar-stack .avatar {
+  overflow: hidden;
+  margin-left: -8px;
+}
+
+.avatar {
+  text-transform: capitalize;
+  &:first-child {
+    background-color: var(--primary-100);
+    color: white;
+    &.white-avatar {
+      background-color: white;
+      border: solid 1px var(--primary-200);
+      color: var(--dark);
+    }
+    &.green-avatar {
+      background-color: var(--success);
+      color: white;
+    }
+  }
+  cursor: pointer;
+  --bs-avatar-width: 32px;
+  --bs-avatar-bg: white;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-size: 0.875rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-color: white;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.avatar-stack {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}

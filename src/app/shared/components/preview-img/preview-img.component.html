@@ -1,0 +1,17 @@
+<div class="modal-header hstack justify-content-between bg-primary  m-2">
+    <h5 class="modal-title text-warning" id="modal-basic-title">Preview</h5>
+    <app-button [icon]="'fa-solid fa-xmark text-white'" [classList]="'border-none'" (onClick)="closeModal()" />
+</div>
+
+<div class="modal-body">
+    <!-- <img [src]="imgSrc" class="img-fluid" alt="Preview Image" /> -->
+    <ngb-carousel>
+        @for (item of imgSrc; track $index) {
+        <ng-template ngbSlide>
+            <div class="picsum-img-wrapper">
+                <img [src]="item" class="img-fluid" alt="Preview Image" />
+            </div>
+        </ng-template>
+        }
+    </ngb-carousel>
+</div>

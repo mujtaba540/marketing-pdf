@@ -1,0 +1,13 @@
+@use "../variables";
+
+@use "bootstrap/scss/bootstrap" with ( 
+    // Map colors to theme
+    $primary: variables.$primary-100,
+    $secondary: variables.$primary-200,
+    $success: variables.$primary-300,
+    $info: variables.$accent-100,
+    $warning: variables.$yellow-shade,
+    $danger: variables.$red-shade,
+    $light: variables.$bg-100,
+    $dark: variables.$bg-200
+    );

@@ -1,0 +1,11 @@
+<table class="table" [ngClass]="{ 'p-0': padding }">
+  <tbody>
+    @for (item of getRowArray(); track $index) {
+      <tr>
+        @for (el of getColumnsArray(); track $index) {
+          <td><span class="skeleton-box w-100 {{classList}}" ></span></td>
+        }
+      </tr>
+    }
+  </tbody>
+</table>

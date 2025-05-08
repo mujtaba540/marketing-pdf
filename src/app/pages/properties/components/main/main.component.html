@@ -1,0 +1,35 @@
+<main class=" vh-100  container-fluid pt-2" #htmlContent>
+    <div class="vstack gap-2 rounded m-auto main-container">
+        <form class="hstack justify-content-between px-3 py-2 align-item-center bg-white noprint" [formGroup]="templateForm">
+          <div  class="row  col-8">
+            <span class="col hstack flex-grow-1">
+                <app-input-radio [classList]="'font-12'"  formControlName="propertyType" [name]="'row.value.id'"
+                  [options]="radioOptions"/>
+            </span>
+            <span class="col">
+                @if (getFormControl('propertyType').value === 'villa') {
+                  <app-select [name]="'type'" [placeholder]="'property'" formControlName="property" [label]="'Property'"
+                  [bindValue]="'unit_code'" [bindLabel]="'unit_code'" [items]="VILLAS" [selectClassList]="'font-12'"  />
+                }@else {
+                  <app-select [name]="'type'" [placeholder]="'property'" formControlName="property" [label]="'Property'"
+                  [bindValue]="'unit_code'" [bindLabel]="'unit_code'" [items]="APPARTMENTS" [selectClassList]="'font-12'"  />
+                }
+
+            </span>
+            <span class="col">
+                <app-input [controlName]="getFormControl('bookingDate')" [name]="'bookingDate'" [type]="'date'"
+                [label]="'Booking Date'" [placeholder]="'Enter booking date'"  />
+            </span>
+           
+          </div>
+          <span class="col-4 align-self-end pb-s">
+            <app-button [label]="'Calculate'" [classList]="'btn-warning'" [disabled]="!templateForm.valid" [icon]="'fa-solid fa-plus'"
+            (onClick)="onSubmit()" />
+          </span>
+            
+        </form>
+
+      <!-- <app-page-1 [selectedProperty]="selectedProperty"/> -->
+       <app-page-2 [selectedProperty]="selectedProperty" [installmentsPlan]="installmentsPlan"/>
+    </div>
+  </main>

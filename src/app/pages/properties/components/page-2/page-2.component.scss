@@ -1,0 +1,50 @@
+// body {
+//     background-color: #f8f9fa;
+//     font-family: Arial, sans-serif;
+// }
+
+.sales-container{
+    // font-size: 0.8rem;
+}
+
+
+
+.a4-page {
+    width: 210mm;
+    height: 297mm;
+    padding: 20mm;
+    margin: auto;
+    background: white;
+    box-sizing: border-box;
+    overflow: hidden;
+    page-break-after: always;
+  }
+  
+.section-title {
+    font-weight: bold;
+    // background-color: #e9ecef;
+    padding: 8px 0;
+    margin-bottom: 8px;
+}
+.table th, .table td {
+    vertical-align: middle;
+    text-align: center;
+}
+.note {
+    font-size: 0.8rem;
+    color: gray;
+}
+.bordered-box {
+    // border: 1px solid #dee2e6;
+    // padding: 16px;
+    // border-radius: 8px;
+    // background-color: white;
+}
+
+.bg-gray{
+   background-color: #f4f4f4
+}
+
+.col-md-6 {
+    width: 49%;
+}

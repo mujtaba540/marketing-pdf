@@ -1,0 +1,14 @@
+.main-width{
+    width: 500px;
+    height: 500px;
+}
+
+.pb-s{
+    padding-bottom: 0.2rem
+}
+
+@media print {
+    .noprint {
+       display:none;
+    }
+ }

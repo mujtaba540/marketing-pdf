@@ -1,0 +1,117 @@
+<div class="container my-4">
+    <div class="text-end">
+        <img src="/logo-3.png" alt="SHARESIDENCES Emirates Logo" height="40">
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="text-center bg-gray rounded-pill px-5 sales-container py-2">
+            <h4 class="fw-bold mb-0">SALES OFFER</h4>
+            <p class="mb-0">Unit No: {{selectedProperty()?.unit_code}}</p>
+        </div>
+    </div>
+
+
+    <div class="d-flex justify-content-between mb-2 ">
+        <span>Property Reference No: ____________</span>
+        <span>Date: {{getCurrentDate() | date}}</span>
+    </div>
+
+    <div class="bordered-box mb-4">
+        <div class="section-title">PROJECTS DETAILS</div>
+        <div class="row justify-content-between  mb-2">
+            <div class="col-md-6 project-name bg-dark hstack justify-content-between">Project Name: <p class="text-end mb-0">SHA Island AlJurf</p></div>
+            <div class="col-md-6 bg-dark hstack justify-content-between">Location:  <p class="text-end mb-0">SHA Islands AlJurf</p></div>
+        </div>
+        <div class="row justify-content-between mb-2">
+            <div class="col-md-6 hstack justify-content-between">Project Status: <p class="text-end mb-0">Off-Plan</p></div>
+            <div class="col-md-6 hstack justify-content-between">Estimated Completion Date: <p class="text-end mb-0">Q1 - 2027</p></div>
+        </div>
+
+        <div class="section-title">PROPERTY DETAILS & SIZING DETAILS</div>
+        <div class="row justify-content-between mb-2 " >
+            <div class="col-md-6 hstack justify-content-between bg-dark">Plot Number: <p class="text-end mb-0">{{selectedProperty()?.unit_code}}</p></div>
+            <div class="col-md-6 hstack justify-content-between bg-dark">BUA (m²): <p class="text-end mb-0">{{selectedProperty()?.bua}}</p></div>
+        </div>
+        <div class="row justify-content-between mb-2 " >
+            <div class="col-md-6 hstack justify-content-between">{{selectedProperty()?.isAppartment?'Appartment':'Villa'}} Type: <p class="text-end mb-0">{{selectedProperty()?.propertyType}} </p></div>
+            <div class="col-md-6 hstack justify-content-between">SQFT: <p class="text-end mb-0">{{selectedProperty()?.total_sqft}}</p></div>
+        </div>
+        <div class="row justify-content-between mb-2 " >
+            <div class="col-md-6 hstack justify-content-between bg-dark">Bedrooms: <p class="text-end mb-0">{{selectedProperty()?.bedrooms}}</p></div>
+            <div class="col-md-6 hstack justify-content-between bg-dark">AED/SQFT: <p class="text-end mb-0">{{selectedProperty()?.aed_sqft}}</p></div>
+        </div>
+        <div class="row justify-content-between mb-2 " >
+            @if (!this.selectedProperty()?.isAppartment) {
+                <div class="col-md-6 hstack justify-content-between">Plot Area (m²): <p class="text-end mb-0">{{selectedProperty()?.plot_area}}</p></div>
+            }
+            <div class="col-md-6 hstack justify-content-between">50/50 Full Payment on Completion: <p class="text-end mb-0">{{selectedProperty()?.full_payment_completion}}</p></div>
+        </div>
+        <div class="mb-2 col-md-6 hstack justify-content-between">60/10/30 Post-Handover-2 YEAR PAYMENT PLAN: <p class="text-end mb-0">{{selectedProperty()?.year_payment_plan}}</p></div>
+    </div>
+
+    <div class="bordered-box mb-4">
+        <div class="section-title">PAYMENT PLAN - 50/50 Till Completion</div>
+        <div class="d-flex justify-content-between gap-1 align-item-center">
+            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.full_payment_completion}} AED</span>
+            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> xxx</span>
+            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.full_payment_completion)}}</span>
+        </div>
+
+        <table class="table table-bordered border-black mt-2">
+            <thead>
+            <tr>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Percentage</th>
+                <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+                @for (item of installmentsPlan()?.option1; track $index) {
+                <tr>
+                    <td>{{item.label}}</td>
+                    <td>{{item.date | date}}</td>
+                    <td>{{item.percentage}}</td>
+                    <td>{{item.amount}}</td>
+                </tr>
+                
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="bordered-box mb-4">
+        <div class="section-title">PAYMENT PLAN - 70/30 PH</div>
+        <div class="d-flex justify-content-between gap-1 align-item-center">
+            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.year_payment_plan}} AED</span>
+            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> xxx</span>
+            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.year_payment_plan)}}</span>
+        </div>
+
+        <table class="table table-bordered border-black mt-2">
+            <thead>
+            <tr>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Percentage</th>
+                <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+                @for (item of installmentsPlan()?.option2; track $index) {
+                    <tr>
+                        <td>{{item.label}}</td>
+                        <td>{{item.date | date}}</td>
+                        <td>{{item.percentage}}</td>
+                        <td>{{item.amount}}</td>
+                    </tr>
+                    
+                    }
+            </tbody>
+        </table>
+    </div>
+
+    <p class="note">
+        Note: Please note this payment plan is provided for your information only and is not an obligation or commitment by Imtiaz Developments.<br>
+        We calculate the Unit sizes as accurately as possible but they may be subject to final changes. This offer remains valid for 24hrs only and is subject to the availability of the Unit. The currency exchange rate will be determined at the time of payment.
+    </p>
+</div>

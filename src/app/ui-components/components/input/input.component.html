@@ -1,0 +1,61 @@
+<div class="d-flex flex-column gap-1 justify-content-between">
+    <!-- -------- label --------- -->
+    @if (label()) {
+    <label [for]="name()" class="form-label m-0" [class]="labelClassList()">{{label()}}</label>
+    }
+
+    <div class="form-group">
+        <!-- ------- icon --------- -->
+        @if(icon()){
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">
+                <i class="input-icon" [class]="icon()"></i>
+
+            </span>
+        </div>
+        }
+
+        @if(readOnly()){
+        <div [innerHTML]="controlName().value ?? 'nbsp;'" [class]="inputTagClass()"
+            class="form-control disabled text-capitalize"></div>
+
+        }@else {
+        <!-- --------- input field -------- -->
+        @if(type() === 'text-area'){
+        <textarea [name]="name()" [formControl]="controlName()" [placeholder]="placeholder()"
+            class="w-100 form-control " [class]="inputTagClass()" [ngClass]="{'is-invalid': controlName() && controlName().invalid && controlName().touched,
+                'padding-left': icon(), 'padding-right':hideIcon() }" (change)="inputChange($event)"></textarea>
+        }@else {
+        <input [name]="name()" [formControl]="controlName()" [type]="type()" [placeholder]="placeholder()"
+            class="w-100 form-control " [class]="inputTagClass()" [ngClass]="{'is-invalid': controlName() && controlName().invalid && controlName().touched,
+                'padding-left': icon(), 'padding-right':hideIcon() }" (change)="inputChange($event)" />
+        }
+
+        }
+
+
+        <!-- ---------- show text icon --------------     -->
+        @if(hideIcon() && !(controlName() && controlName().invalid)){
+        <div class="input-group-prepend cursor-pointer" (click)="hideIconClickAction()">
+            <span class="input-group-text right-icon" id="basic-addon1">
+                <i class="input-icon" [class]="hideIcon()"></i>
+
+            </span>
+        </div>
+        }
+
+    </div>
+
+    <!-- --------- error message ----------- -->
+    @if (controlName() && controlName().invalid && controlName().touched) {
+    <span class="text-danger text-sm">@for (item of controlName().errors | keyvalue; track $index) {
+        *{{ showErrorMessage(controlName(), label()) }}
+        }</span>
+    }@else {
+    <!-- --------- hint ----------- -->
+    @if(hintText()){
+    <span class="text-sm form-text m-0">{{hintText()}}</span>
+    }
+    }
+
+</div>

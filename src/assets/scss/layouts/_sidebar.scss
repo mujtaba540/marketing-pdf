@@ -1,0 +1,145 @@
+@use "../variables";
+
+#sidebar {
+  width: variables.$sidenav-mini;
+  min-width: variables.$sidenav-mini;
+  height: 100%;
+  z-index: 1000;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+
+  &.expand {
+    width: variables.$sidenav-desktop;
+    min-width: variables.$sidenav-desktop;
+  }
+
+  &:not(.expand) {
+    a.sidebar-link span {
+      display: none;
+    }
+
+    .sidebar-item {
+      .sidebar-dropdown {
+        position: absolute;
+        top: 0;
+        left: 70px;
+        padding: 0;
+        min-width: 15rem;
+        display: none;
+      }
+
+      &:hover {
+        .has-dropdown+.sidebar-dropdown {
+          display: block;
+          max-height: 15em;
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &.expand {
+    .sidebar-link[data-bs-toggle="collapse"]::after {
+      border: solid;
+      border-width: 0 0.075rem 0.075rem 0;
+      content: "";
+      display: inline-block;
+      padding: 2px;
+      position: absolute;
+      right: 1.5rem;
+      top: 1.4rem;
+      transform: rotate(-135deg);
+      transition: all 0.2s ease-out;
+    }
+
+    .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+      transform: rotate(45deg);
+      transition: all 0.2s ease-out;
+    }
+
+    .sub-item {
+      padding-left: 2.5rem;
+    }
+  }
+}
+
+.toggle-btn {
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  padding: 0.5rem 1rem;
+  
+  @media (min-width: variables.$display-md) {
+    .toggle-btn {
+      padding: 1rem 1.5rem;
+    }
+  }
+}
+
+.logo-img {
+  background-repeat: no-repeat;
+  object-fit: contain;
+  transition: none;
+  height: 25px;
+}
+
+@media (min-width: variables.$display-md) {
+  .logo-img {
+    height: 40px;
+  }
+}
+
+
+.sidebar-nav {
+  padding: 2rem 0;
+  flex: 1 1 auto;
+}
+
+a.sidebar-link {
+  padding: 0.625rem 1.625rem;
+  color: white;
+  display: block;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  border-left: 3px solid transparent;
+  text-decoration: none;
+  display: flex;
+  align-items: normal;
+  cursor: pointer;
+
+  &.active-tab {
+    background-color: variables.$yellow-shade-200;
+    border-left: 3px solid variables.$yellow-shade-100;
+    color: variables.$primary-100;
+
+
+    &:hover {
+      background-color: variables.$yellow-shade-200;
+      border-left: 3px solid variables.$yellow-shade-100;
+      color: variables.$primary-100;
+    }
+  }
+
+  .sidelink-icon {
+    font-size: 1.1rem;
+    margin-right: 0.75rem;
+    color: variables.$yellow-shade-100;
+  }
+
+  &:hover {
+    background-color: variables.$yellow-shade-200;
+    border-left: 3px solid variables.$yellow-shade-100;
+    color: variables.$primary-100;
+  }
+}
+
+.sidebar-item {
+  position: relative;
+  margin: 0.35rem 0;
+}
+
+.img-lg{
+  height: 100px;
+}

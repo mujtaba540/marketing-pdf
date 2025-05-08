@@ -1,0 +1,54 @@
+.badge {
+  &.badgeCustom {
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 11px !important;
+    line-height: 14.5px;
+    text-align: center;
+    padding-inline: 6px;
+
+    &.badge-selected {
+      background: #d4fbea;
+      color: #32a473;
+    }
+
+    &.badge-success {
+      background: #70d7ab;
+      color: #ffffff;
+    }
+
+    &.badge-under-review {
+      background: #def1f9;
+      color: #239fd4;
+      border-color: #239fd4;
+    }
+
+    &.badge-cultivation {
+      background: #f9dede;
+      color: #d42323;
+    }
+
+    &.badge-recieved {
+      background: #eee0b94a;
+      color: #efbe39;
+    }
+
+    &.badge-na {
+      background: #c3c3c3;
+      color: #ffffff;
+    }
+    &.inComplete {
+      background: #ef3e22;
+      color: #ffffff;
+    }
+    &.inApproval {
+      background: #eea941;
+      color: #ffffff;
+    }
+    &.completed {
+      background: #17e88f;
+      color: #ffffff;
+    }
+  }
+}

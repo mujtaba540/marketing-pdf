@@ -1,0 +1,49 @@
+.input-group-text {
+  background-color: transparent;
+  top: 5px;
+  border: none;
+  position: absolute;
+}
+
+.right-icon {
+  right: 0;
+}
+
+.form-group {
+  position: relative;
+}
+
+.hint-text {
+  font-size: 0.6rem;
+  color: var(--gray-100);
+}
+
+.text-sm {
+  font-size: 0.8rem;
+}
+
+.form-control {
+  &.padding-left {
+    padding-left: 2rem;
+  }
+  &.padding-right {
+    padding-right: 2rem;
+  }
+}
+
+.disabled {
+  background-color: #e9ecef;
+  opacity: 1;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
