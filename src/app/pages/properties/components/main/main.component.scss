@@ -1,6 +1,6 @@
-.main-width{
-    width: 500px;
-    height: 500px;
+.main-width-fluid{
+    width: 794px;
+    height: 1123px;
 }
 
 .pb-s{
@@ -11,4 +11,6 @@
     .noprint {
        display:none;
     }
+    .page, .page-break { break-after: page; }
  }
+

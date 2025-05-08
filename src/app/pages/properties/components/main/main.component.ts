@@ -24,7 +24,7 @@ import { InputRadioComponent } from '../../../../ui-components/components/input-
     ReactiveFormsModule,
     InputComponent,
     ButtonComponent,
-    // Page1Component,
+    Page1Component,
     Page2Component,
     InputRadioComponent,
   ],

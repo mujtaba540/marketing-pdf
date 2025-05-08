@@ -1,28 +1,24 @@
-<div>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Apartment Number</th>
-          <th scope="col">Floor</th>
-          <th scope="col">Bedroom</th>
-          <!-- <th scope="col">Apartment Type</th> -->
-          <th scope="col">GSA (SQM)</th>
-          <th scope="col">50/50 - Payment Plan - Price in AED</th>
-          <th scope="col">70/30 with 2-Year
-            Post Handover
-            Price in AED</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{selectedProperty()?.unit_code}}</td>
-          <td>{{selectedProperty()?.floor}}</td>
-          <td>{{selectedProperty()?.bedrooms}}</td>
-          <td>{{selectedProperty()?.total_sqft}}</td>
-          <td>{{selectedProperty()?.full_payment_completion}}</td>
-          <td>{{selectedProperty()?.year_payment_plan}}</td>
-        </tr>
+<main class="main-width-fluid  pt-2">
+    <div class="vstack p-2 justify-content-between h-100">
         
-      </tbody>
-    </table>
-  </div>
+        <div class="vstack align-items-center justify-content-center gap-3">
+            <img src="/main.jpg" class="img-fluid"/>
+            <div class=" vstack gap-3">
+                <img src="/sha-logo.png" class="img-fluid w-75 align-self-center"/>
+                <div class="vstack align-items-center justify-content-center">
+                    <h4 class="mb-0">SALES OFFER</h4>
+                      <p class="mb-0">Unit No:</p>  
+                </div>
+            </div>
+        </div>
+        
+        <div class="hstack justify-content-between">
+            <span>
+                <p class="mb-0 text-muted">Exclusive Agents</p>
+                <img src="/kf-logo.png" class="img-fluid"/>
+            </span>
+            <img src="/sha-2.png" class="img-fluid"/>
+            <img src="/imkan.png" class="img-fluid"/>
+        </div>
+    </div>
+  </main>

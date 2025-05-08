@@ -1,4 +1,4 @@
-<main class=" vh-100  container-fluid pt-2" #htmlContent>
+<main class="   main-width-fluid pt-2" #htmlContent>
     <div class="vstack gap-2 rounded m-auto main-container">
         <form class="hstack justify-content-between px-3 py-2 align-item-center bg-white noprint" [formGroup]="templateForm">
           <div  class="row  col-8">
@@ -34,7 +34,8 @@
             
         </form>
 
-      <!-- <app-page-1 [selectedProperty]="selectedProperty"/> -->
-       <app-page-2 [selectedProperty]="selectedProperty" [installmentsPlan]="installmentsPlan"/>
+      <app-page-1 [selectedProperty]="selectedProperty" class="page"/>
+      <!-- <div class="page-break"></div> -->
+       <app-page-2 [selectedProperty]="selectedProperty" [installmentsPlan]="installmentsPlan" class="page"/>
     </div>
   </main>
