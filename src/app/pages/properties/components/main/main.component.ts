@@ -65,49 +65,59 @@ export class MainComponent {
     return this.templateForm.controls[control] as FormControl;
   }
 
+  openPrint() {
+    window.print();
+  }
+
   onSubmit() {
-    const { property, bookingDate, propertyType } =
-      this.templateForm.getRawValue();
-    if (propertyType === 'appartment') {
-      this.selectedProperty = APPARTMENTS.find(
-        (el: any) => el.unit_code === property
-      );
-      this.selectedProperty.isAppartment = true;
-      this.selectedProperty.propertyType = true
-        ? this.selectedProperty?.bedrooms.toLowerCase() ===
-          '5 bedroom'.toLowerCase()
-          ? 'Penthouse'
-          : 'Appartment'
-        : '';
-      const totalSQT = parseNumber(this.selectedProperty?.total_sqft);
-
-      const balSQT = parseNumber(this.selectedProperty?.balconies);
-
-      this.selectedProperty.bua = totalSQT - balSQT;
+    if (!this.templateForm.valid) {
+      this.templateForm.markAllAsTouched();
     } else {
-      this.selectedProperty = VILLAS.find(
-        (el: any) => el.unit_code.toLowerCase() === property.toLowerCase()
+      const { property, bookingDate, propertyType } =
+        this.templateForm.getRawValue();
+      if (propertyType === 'appartment') {
+        this.selectedProperty = APPARTMENTS.find(
+          (el: any) => el.unit_code === property
+        );
+        this.selectedProperty.isAppartment = true;
+        this.selectedProperty.propertyType = true
+          ? this.selectedProperty?.bedrooms.toLowerCase() ===
+            '5 bedroom'.toLowerCase()
+            ? 'Penthouse'
+            : 'Appartment'
+          : '';
+        const totalSQT = parseNumber(this.selectedProperty?.total_sqft);
+
+        const balSQT = parseNumber(this.selectedProperty?.balconies);
+
+        this.selectedProperty.bua = totalSQT - balSQT;
+      } else {
+        this.selectedProperty = VILLAS.find(
+          (el: any) => el.unit_code.toLowerCase() === property.toLowerCase()
+        );
+        this.selectedProperty.isAppartment = false;
+        this.selectedProperty.propertyType =
+          this.selectedProperty?.villa_type.split(' ')[0] ?? 'Villa';
+
+        const totalSQT = parseNumber(this.selectedProperty?.total_sqft);
+        const balSQT = parseNumber(this.selectedProperty?.balconies);
+        this.selectedProperty.total_sqft = this.selectedProperty.sqft ?? 0;
+        // this.selectedProperty.bua = totalSQT - balSQT;
+      }
+
+      const baseDate = DateTime.fromISO(bookingDate);
+      const totalPrice = parseNumber(
+        this.selectedProperty?.full_payment_completion
       );
-      this.selectedProperty.isAppartment = false;
-      this.selectedProperty.propertyType =
-        this.selectedProperty?.villa_type.split(' ')[0] ?? 'Villa';
-
-      const totalSQT = parseNumber(this.selectedProperty?.total_sqft);
-      const balSQT = parseNumber(this.selectedProperty?.balconies);
-      this.selectedProperty.total_sqft = this.selectedProperty.sqft ?? 0;
-      // this.selectedProperty.bua = totalSQT - balSQT;
+      const totalPriceTwo = parseNumber(
+        this.selectedProperty?.year_payment_plan
+      );
+      this.installmentsPlan = this.getPaymentSchedule(
+        totalPrice,
+        totalPriceTwo,
+        baseDate
+      );
     }
-
-    const baseDate = DateTime.fromISO(bookingDate);
-    const totalPrice = parseNumber(
-      this.selectedProperty?.full_payment_completion
-    );
-    const totalPriceTwo = parseNumber(this.selectedProperty?.year_payment_plan);
-    this.installmentsPlan = this.getPaymentSchedule(
-      totalPrice,
-      totalPriceTwo,
-      baseDate
-    );
   }
 
   getPaymentSchedule(price: number, pricetwo: number, bookingDate: any) {

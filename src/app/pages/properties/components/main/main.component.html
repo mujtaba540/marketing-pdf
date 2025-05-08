@@ -2,14 +2,17 @@
     <div class="vstack gap-2 rounded m-auto main-container">
         <form class="hstack justify-content-between px-3 py-2 align-item-center bg-white noprint" [formGroup]="templateForm">
           <div  class="row  col-8">
-            <span class="col hstack flex-grow-1">
-                <app-input-radio [classList]="'font-12'"  formControlName="propertyType" [name]="'row.value.id'"
-                  [options]="radioOptions"/>
-            </span>
+            <div class="col ">
+              <label class="fw-bold m-0">Property Type</label>
+              <span class="col hstack flex-grow-1">
+                  <app-input-radio [classList]="'font-12'"  formControlName="propertyType" [name]="'row.value.id'"
+                    [options]="radioOptions" [label]="'Property Type'"/>
+              </span>
+            </div>
             <span class="col">
                 @if (getFormControl('propertyType').value === 'villa') {
                   <app-select [name]="'type'" [placeholder]="'property'" formControlName="property" [label]="'Property'"
-                  [bindValue]="'unit_code'" [bindLabel]="'unit_code'" [items]="VILLAS" [selectClassList]="'font-12'"  />
+                  [bindValue]="'unit_code'" [bindLabel]="'unit_code'" [items]="VILLAS" [selectClassList]="'font-12'"   />
                 }@else {
                   <app-select [name]="'type'" [placeholder]="'property'" formControlName="property" [label]="'Property'"
                   [bindValue]="'unit_code'" [bindLabel]="'unit_code'" [items]="APPARTMENTS" [selectClassList]="'font-12'"  />
@@ -18,13 +21,15 @@
             </span>
             <span class="col">
                 <app-input [controlName]="getFormControl('bookingDate')" [name]="'bookingDate'" [type]="'date'"
-                [label]="'Booking Date'" [placeholder]="'Enter booking date'"  />
+                [label]="'Booking Date'" [placeholder]="'Enter booking date'"   />
             </span>
            
           </div>
-          <span class="col-4 align-self-end pb-s">
-            <app-button [label]="'Calculate'" [classList]="'btn-warning'" [disabled]="!templateForm.valid" [icon]="'fa-solid fa-plus'"
+          <span class="col-4 hstack gap-2 align-self-end pb-s">
+            <app-button [label]="'Calculate'" [classList]="'btn-warning'" [icon]="'fa-solid fa-plus'"
             (onClick)="onSubmit()" />
+            <app-button [label]="'Preview'" [classList]="'btn-primary'" [disabled]="!templateForm.valid" [icon]="'fa-solid fa-plus'"
+            (onClick)="openPrint()" />
           </span>
             
         </form>
