@@ -1,0 +1,17 @@
+.main-width-fluid{
+    width: 794px;
+    height: 1123px;
+}
+
+.print-only {
+    display: none;
+  }
+@media print {
+    .noprint * {
+        display: none !important;
+      }
+    .page, .page-break { break-after: page; }
+    .print-only {
+        display: block;
+      }
+ }

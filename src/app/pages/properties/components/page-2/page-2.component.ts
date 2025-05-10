@@ -1,10 +1,10 @@
-import { DatePipe } from '@angular/common';
+import { CurrencyPipe, DatePipe } from '@angular/common';
 import { Component, input } from '@angular/core';
 import { parseNumber } from '../../../../shared/utils/app.utils';
 
 @Component({
   selector: 'app-page-2',
-  imports: [DatePipe],
+  imports: [DatePipe, CurrencyPipe],
   templateUrl: './page-2.component.html',
   styleUrl: './page-2.component.scss',
 })

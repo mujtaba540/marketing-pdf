@@ -1,21 +1,21 @@
-<div class="container page-size my-4">
-    <div class="text-end">
+<div class="page-size details-page my-4">
+    <div class="text-end gradient-bg border-bottom py-4 px-2 print-only">
         <img src="/sha-2.png" alt="SHARESIDENCES Emirates Logo" height="40">
     </div>
-    <div class="d-flex justify-content-center">
-        <div class="text-center bg-gray rounded-pill px-5 sales-container py-2">
+    <div class="d-flex justify-content-center mt-3">
+        <div class="text-center bg-dark rounded-pill px-5 sales-container py-2">
             <h4 class="fw-bold mb-0">SALES OFFER</h4>
             <p class="mb-0">Unit No: {{selectedProperty()?.unit_code}}</p>
         </div>
     </div>
 
 
-    <div class="d-flex justify-content-between mb-2 ">
-        <span>Property Reference No: ____________</span>
-        <span>Date: {{getCurrentDate() | date}}</span>
+    <div class="d-flex justify-content-end mb-2 ">
+        <!-- <span>Property Reference No: ____________</span> -->
+        <span><strong>Date:</strong> {{getCurrentDate() | date: 'dd/MM/yyyy' }}</span>
     </div>
 
-    <div class="bordered-box mb-4">
+    <div class="bordered-box mb-2">
         <div class="section-title">PROJECTS DETAILS</div>
         <div class="row justify-content-between  mb-2">
             <div class="col-md-6 project-name bg-dark hstack justify-content-between">Project Name: <p class="text-end mb-0">SHA Island AlJurf</p></div>
@@ -29,31 +29,31 @@
         <div class="section-title">PROPERTY DETAILS & SIZING DETAILS</div>
         <div class="row justify-content-between mb-2 " >
             <div class="col-md-6 hstack justify-content-between bg-dark">Plot Number: <p class="text-end mb-0">{{selectedProperty()?.unit_code}}</p></div>
-            <div class="col-md-6 hstack justify-content-between bg-dark">BUA (m²): <p class="text-end mb-0">{{selectedProperty()?.bua}}</p></div>
+            <div class="col-md-6 hstack justify-content-between bg-dark">BUA: <p class="text-end mb-0">{{selectedProperty()?.bua}}</p></div>
         </div>
         <div class="row justify-content-between mb-2 " >
-            <div class="col-md-6 hstack justify-content-between">{{selectedProperty()?.isAppartment?'Appartment':'Villa'}} Type: <p class="text-end mb-0">{{selectedProperty()?.propertyType}} </p></div>
-            <div class="col-md-6 hstack justify-content-between">SQFT: <p class="text-end mb-0">{{selectedProperty()?.total_sqft}}</p></div>
+            <div class="col-md-6 hstack justify-content-between">{{selectedProperty()?.isAppartment?'Appartment':'Villa'}} Type: <p class="text-end mb-0">{{selectedProperty()?.type}} </p></div>
+            <div class="col-md-6 hstack justify-content-between">SQFT: <p class="text-end mb-0">{{selectedProperty()?.sqft}}</p></div>
         </div>
         <div class="row justify-content-between mb-2 " >
             <div class="col-md-6 hstack justify-content-between bg-dark">Bedrooms: <p class="text-end mb-0">{{selectedProperty()?.bedrooms}}</p></div>
-            <div class="col-md-6 hstack justify-content-between bg-dark">AED/SQFT: <p class="text-end mb-0">{{selectedProperty()?.aed_sqft}}</p></div>
+            <div class="col-md-6 hstack justify-content-between bg-dark">AED/SQFT: <p class="text-end mb-0">{{selectedProperty()?.aed_sqft | currency:'AED ':'code':'1.2-2' }}</p></div>
         </div>
         <div class="row justify-content-between mb-2 " >
             @if (!this.selectedProperty()?.isAppartment) {
-                <div class="col-md-6 hstack justify-content-between">Plot Area (m²): <p class="text-end mb-0">{{selectedProperty()?.plot_area}}</p></div>
+                <div class="col-md-6 hstack justify-content-between">Plot Area: <p class="text-end mb-0">{{selectedProperty()?.plot_area}}</p></div>
             }
-            <div class="col-md-6 hstack justify-content-between">50/50 Full Payment on Completion: <p class="text-end mb-0">{{selectedProperty()?.full_payment_completion}}</p></div>
+            <!-- <div class="col-md-6 hstack justify-content-between">50/50 Full Payment on Completion: <p class="text-end mb-0">{{selectedProperty()?.full_payment}}</p></div> -->
         </div>
-        <div class="mb-2 col-md-6 hstack justify-content-between">60/10/30 Post-Handover-2 YEAR PAYMENT PLAN: <p class="text-end mb-0">{{selectedProperty()?.year_payment_plan}}</p></div>
+        <!-- <div class="mb-2 col-md-6 hstack justify-content-between">60/10/30 Post-Handover-2 YEAR PAYMENT PLAN: <p class="text-end mb-0">{{selectedProperty()?.year_payment}}</p></div> -->
     </div>
 
     <div class="bordered-box mb-4">
         <div class="section-title">PAYMENT PLAN - 50/50 Till Completion</div>
         <div class="d-flex justify-content-between gap-1 align-item-center">
-            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.full_payment_completion}} AED</span>
-            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> xxx</span>
-            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.full_payment_completion)}}</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.full_payment | currency:'AED ':'code':'1.2-2'}}</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> xxx</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.full_payment | currency:'AED ':'code':'1.2-2')}}</span>
         </div>
 
         <table class="table table-bordered border-black mt-2">
@@ -69,7 +69,7 @@
                 @for (item of installmentsPlan()?.option1; track $index) {
                 <tr>
                     <td>{{item.label}}</td>
-                    <td>{{item.date | date}}</td>
+                    <td>{{item.date | date: 'dd/MM/yyyy' }}</td>
                     <td>{{item.percentage}}</td>
                     <td>{{item.amount}}</td>
                 </tr>
@@ -82,9 +82,9 @@
     <div class="bordered-box mb-4">
         <div class="section-title">PAYMENT PLAN - 70/30 PH</div>
         <div class="d-flex justify-content-between gap-1 align-item-center">
-            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.year_payment_plan}} AED</span>
-            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> xxx</span>
-            <span class="bg-gray fw-bold flex-grow-1 p-2"><strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.year_payment_plan)}}</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.year_payment | currency:'AED ':'code':'1.2-2'}}</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> xxx</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.year_payment | currency:'AED ':'code':'1.2-2')}}</span>
         </div>
 
         <table class="table table-bordered border-black mt-2">
@@ -100,7 +100,7 @@
                 @for (item of installmentsPlan()?.option2; track $index) {
                     <tr>
                         <td>{{item.label}}</td>
-                        <td>{{item.date | date}}</td>
+                        <td>{{item.date | date: 'dd/MM/yyyy' }}</td>
                         <td>{{item.percentage}}</td>
                         <td>{{item.amount}}</td>
                     </tr>
@@ -110,8 +110,8 @@
         </table>
     </div>
 
-    <p class="note">
-        Note: Please note this payment plan is provided for your information only and is not an obligation or commitment by Imtiaz Developments.<br>
+    <p class="note-text fst-italic text-center print-only">
+        Note: Please note this payment plan is provided for your information only and is not an obligation or commitment by Imtiaz Developments.
         We calculate the Unit sizes as accurately as possible but they may be subject to final changes. This offer remains valid for 24hrs only and is subject to the availability of the Unit. The currency exchange rate will be determined at the time of payment.
     </p>
 </div>

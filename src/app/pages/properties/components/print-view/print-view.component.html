@@ -1,0 +1,17 @@
+<!-- Page 1 -->
+<div class="page-break">
+    <app-page-1 [selectedProperty]="selectedProperty()" />
+  </div>
+  
+  <!-- Page 2 -->
+  <div class="page-break">
+    <app-page-2 [selectedProperty]="selectedProperty()" [installmentsPlan]="installmentsPlan()" />
+  </div>
+  
+  <!-- Image Pages -->
+  @for (item of selectedProperty()?.imgUrl; track $index) {
+    <div class="d-flex justify-content-center">
+        <app-page-3 [imgUrl]="item"/>
+    </div>
+    }
+  

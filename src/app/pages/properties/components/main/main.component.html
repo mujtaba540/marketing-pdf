@@ -1,41 +1,71 @@
-<main class="   main-width-fluid pt-2" #htmlContent>
-    <div class="vstack gap-2 rounded m-auto main-container">
-        <form class="hstack justify-content-between px-3 py-2 align-item-center bg-white noprint" [formGroup]="templateForm">
-          <div  class="row  col-8">
-            <div class="col ">
-              <label class="fw-bold m-0">Property Type</label>
-              <span class="col hstack flex-grow-1">
-                  <app-input-radio [classList]="'font-12'"  formControlName="propertyType" [name]="'row.value.id'"
-                    [options]="radioOptions" [label]="'Property Type'"/>
-              </span>
-            </div>
-            <span class="col">
-                @if (getFormControl('propertyType').value === 'villa') {
-                  <app-select [name]="'type'" [placeholder]="'property'" formControlName="property" [label]="'Property'"
-                  [bindValue]="'unit_code'" [bindLabel]="'unit_code'" [items]="VILLAS" [selectClassList]="'font-12'"   />
-                }@else {
-                  <app-select [name]="'type'" [placeholder]="'property'" formControlName="property" [label]="'Property'"
-                  [bindValue]="'unit_code'" [bindLabel]="'unit_code'" [items]="APPARTMENTS" [selectClassList]="'font-12'"  />
-                }
-
-            </span>
-            <span class="col">
-                <app-input [controlName]="getFormControl('bookingDate')" [name]="'bookingDate'" [type]="'date'"
-                [label]="'Booking Date'" [placeholder]="'Enter booking date'"   />
-            </span>
-           
-          </div>
-          <span class="col-4 hstack gap-2 align-self-end pb-s">
-            <app-button [label]="'Calculate'" [classList]="'btn-warning'" [icon]="'fa-solid fa-plus'"
-            (onClick)="onSubmit()" />
-            <app-button [label]="'Preview'" [classList]="'btn-primary'" [disabled]="!templateForm.valid" [icon]="'fa-solid fa-plus'"
-            (onClick)="openPrint()" />
-          </span>
-            
-        </form>
-
-      <app-page-1 [selectedProperty]="selectedProperty" class="page print-only"/>
-      <!-- <div class="page-break"></div> -->
-       <app-page-2 [selectedProperty]="selectedProperty" [installmentsPlan]="installmentsPlan" class="page"/>
+<main class="py-1 vh-100">
+  <!-- As a heading -->
+  <nav class="navbar bg-body-tertiary shadow-sm p-3 rounded noprint">
+    <div class="container-fluid">
+      <img src="/kf-logo.svg" class="img-fluid" />
     </div>
-  </main>
+  </nav>
+
+  <div class="row mt-2 rounded m-auto main-container noprint">
+    <!-- --- form --- -->
+    <div class="w-100 d-flex justify-content-center noprint">
+      <form class="shadow rounded p-3 w-50 d-flex flex-column gap-3" [formGroup]="templateForm">
+        <div>
+          <label class="fw-bold m-0">Property Type</label>
+          <span class="col hstack flex-grow-1">
+            <app-input-radio [classList]="'font-12'" formControlName="propertyType" [name]="'row.value.id'"
+              [options]="radioOptions" [label]="'Property Type'" />
+          </span>
+        </div>
+        <span class="">
+          @if (getFormControl('propertyType').value === 'villa') {
+          <app-select [name]="'type'" [placeholder]="'property'" formControlName="property" [label]="'Property'"
+            [bindValue]="'unit_code'" [bindLabel]="'unit_code'" [items]="VILLAS" [selectClassList]="'font-12'" />
+          }@else {
+          <app-select [name]="'type'" [placeholder]="'property'" formControlName="property" [label]="'Property'"
+            [bindValue]="'unit_code'" [bindLabel]="'unit_code'" [items]="APPARTMENTS" [selectClassList]="'font-12'" />
+          }
+
+        </span>
+        <span class="">
+          <app-input [controlName]="getFormControl('bookingDate')" [name]="'bookingDate'" [type]="'date'"
+            [label]="'Booking Date'" [placeholder]="'Enter booking date'" />
+        </span>
+        <span class=" hstack gap-2 align-self-end pb-s">
+          <app-button [label]="'Calculate'" [classList]="'btn-primary'" [icon]="'fa-solid fa-plus'"
+            (onClick)="onSubmit()" />
+          <app-button [label]="'Preview'" [classList]="'btn-outline-danger'" [disabled]="!templateForm.valid"
+            [icon]="'fa-solid fa-plus'" [icon]="'bi bi-printer'" (onClick)="openPrint()" />
+        </span>
+      </form>
+    </div>
+
+
+    <div class="px-5 mt-5 noprint d-flex flex-column justify-content-center align-items-center" >
+      <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav nav-pills nav-justified px-3 py-3 gap-2 shadow w-75">
+        <li [ngbNavItem]="1" class="nav-item">
+          <button ngbNavLink class="nav-link ">Details Page</button>
+          <ng-template ngbNavContent>
+            <div class="d-flex justify-content-center">
+              <app-page-2 [selectedProperty]="selectedProperty" [installmentsPlan]="installmentsPlan" />
+            </div>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="2" class="nav-item">
+          <button ngbNavLink class="nav-link  ">Property Images</button>
+          <ng-template ngbNavContent>
+            @for (item of selectedProperty?.imgUrl; track $index) {
+              <div class="d-flex justify-content-center">
+                  <app-page-3 [imgUrl]="item"/>
+              </div>
+              }
+          </ng-template>
+        </li>
+      </ul>
+      <div [ngbNavOutlet]="nav" class="mt-2"></div>
+    </div>
+
+  </div>
+
+  <app-print-view [selectedProperty]="selectedProperty" [installmentsPlan]="installmentsPlan" class="print-only "/>
+</main>

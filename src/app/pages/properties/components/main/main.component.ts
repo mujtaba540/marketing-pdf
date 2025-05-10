@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { SelectComponent } from '../../../../ui-components/components/select/select.component';
 import {
   FormControl,
@@ -8,14 +8,16 @@ import {
 } from '@angular/forms';
 import { InputComponent } from '../../../../ui-components/components/input/input.component';
 import { ButtonComponent } from '../../../../ui-components/components/button/button.component';
-import { VILLAS } from '../../../../shared/constants/villas';
-import { APPARTMENTS } from '../../../../shared/constants/appartments';
 import { DateTime } from 'luxon';
-import { replacePage8 } from '../../../../shared/constants/pdf';
-import { Page1Component } from '../page-1/page-1.component';
 import { Page2Component } from '../page-2/page-2.component';
 import { parseNumber } from '../../../../shared/utils/app.utils';
 import { InputRadioComponent } from '../../../../ui-components/components/input-radio/input-radio.component';
+import { APPARTMENTS } from '../../../../shared/constants/new-apt';
+import { VILLAS } from '../../../../shared/constants/new-villa';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
+import { PrintViewComponent } from '../print-view/print-view.component';
+import { Page3Component } from '../page-3/page-3.component';
 
 @Component({
   selector: 'app-main',
@@ -24,19 +26,20 @@ import { InputRadioComponent } from '../../../../ui-components/components/input-
     ReactiveFormsModule,
     InputComponent,
     ButtonComponent,
-    Page1Component,
     Page2Component,
     InputRadioComponent,
+    PdfViewerModule,
+    NgbNavModule,
+    PrintViewComponent,
+    Page3Component,
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })
 export class MainComponent {
-  @ViewChild('htmlContent') htmlContentRef!: ElementRef;
-
   VILLAS = VILLAS;
   APPARTMENTS = APPARTMENTS;
-
+  active = 1;
   templateForm!: FormGroup;
   selectedProperty!: any;
   installmentsPlan!: any;
@@ -86,32 +89,20 @@ export class MainComponent {
             ? 'Penthouse'
             : 'Appartment'
           : '';
-        const totalSQT = parseNumber(this.selectedProperty?.total_sqft);
-
-        const balSQT = parseNumber(this.selectedProperty?.balconies);
-
-        this.selectedProperty.bua = totalSQT - balSQT;
       } else {
         this.selectedProperty = VILLAS.find(
           (el: any) => el.unit_code.toLowerCase() === property.toLowerCase()
         );
         this.selectedProperty.isAppartment = false;
         this.selectedProperty.propertyType =
-          this.selectedProperty?.villa_type.split(' ')[0] ?? 'Villa';
+          this.selectedProperty?.type.split(' ')[0] ?? 'Villa';
 
-        const totalSQT = parseNumber(this.selectedProperty?.total_sqft);
-        const balSQT = parseNumber(this.selectedProperty?.balconies);
         this.selectedProperty.total_sqft = this.selectedProperty.sqft ?? 0;
-        // this.selectedProperty.bua = totalSQT - balSQT;
       }
 
       const baseDate = DateTime.fromISO(bookingDate);
-      const totalPrice = parseNumber(
-        this.selectedProperty?.full_payment_completion
-      );
-      const totalPriceTwo = parseNumber(
-        this.selectedProperty?.year_payment_plan
-      );
+      const totalPrice = parseNumber(this.selectedProperty?.full_payment);
+      const totalPriceTwo = parseNumber(this.selectedProperty?.year_payment);
       this.installmentsPlan = this.getPaymentSchedule(
         totalPrice,
         totalPriceTwo,
