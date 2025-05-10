@@ -53,7 +53,10 @@
         <div class="d-flex justify-content-between gap-1 align-item-center">
             <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.full_payment | currency:'AED ':'code':'1.2-2'}}</span>
             <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> xxx</span>
-            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.full_payment | currency:'AED ':'code':'1.2-2')}}</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2">
+                <strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.full_payment) | currency:'AED ':'code':'1.2-2'}}
+                <p class="mb-0 hint-text fw-lighter">*To be paid with booking fee</p>
+            </span>
         </div>
 
         <table class="table table-bordered border-black mt-2">
@@ -62,7 +65,7 @@
                 <th>Description</th>
                 <th>Date</th>
                 <th>Percentage</th>
-                <th>Amount</th>
+                <th>Amount (AED)</th>
             </tr>
             </thead>
             <tbody>
@@ -71,7 +74,7 @@
                     <td>{{item.label}}</td>
                     <td>{{item.date | date: 'dd/MM/yyyy' }}</td>
                     <td>{{item.percentage}}</td>
-                    <td>{{item.amount}}</td>
+                    <td>{{item.amount | number:'1.2-2'}}</td>
                 </tr>
                 
                 }
@@ -84,7 +87,10 @@
         <div class="d-flex justify-content-between gap-1 align-item-center">
             <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.year_payment | currency:'AED ':'code':'1.2-2'}}</span>
             <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> xxx</span>
-            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.year_payment | currency:'AED ':'code':'1.2-2')}}</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2">
+                <strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.year_payment) | currency:'AED ':'code':'1.2-2'}}
+                <p class="mb-0 hint-text fw-lighter">*To be paid with booking fee</p>
+            </span>
         </div>
 
         <table class="table table-bordered border-black mt-2">
@@ -93,7 +99,7 @@
                 <th>Description</th>
                 <th>Date</th>
                 <th>Percentage</th>
-                <th>Amount</th>
+                <th>Amount (AED)</th>
             </tr>
             </thead>
             <tbody>
@@ -102,7 +108,7 @@
                         <td>{{item.label}}</td>
                         <td>{{item.date | date: 'dd/MM/yyyy' }}</td>
                         <td>{{item.percentage}}</td>
-                        <td>{{item.amount}}</td>
+                        <td>{{item.amount | number:'1.2-2'}}</td>
                     </tr>
                     
                     }
