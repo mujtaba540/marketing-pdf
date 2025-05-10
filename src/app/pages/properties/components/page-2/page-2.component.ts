@@ -13,7 +13,6 @@ export class Page2Component {
   installmentsPlan = input<any>();
 
   getCalculatedAdmFee(val: any) {
-    console.log(val);
     if (val) return parseNumber(val) * 0.02;
     return '';
   }
