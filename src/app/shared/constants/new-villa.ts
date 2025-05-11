@@ -10,10 +10,10 @@ export const VILLAS = [
     aed_sqft: 3912.91,
     full_payment: 34367777,
     year_payment: 35316777,
-    imgUrls: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-villa-b/4%20Bedroom%20Villas%20SPA%20%E2%80%93%20Type%20B-pages-1.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAX4L76AUXH7PMS4XO%2F20250510%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20250510T072511Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiRjBEAiBSqtJgD%2BaoMcGaYDzhbCGsirD%2FJrlT04%2FthFNnPhXzegIgb7q4CYUayjmw38evUj6Ng8FyNbkPZBJCBVjuecYrOeIq3wIIof%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1NDE5NzEwNTU5MTgiDFR%2BjyTdbCaebnrXhiqzAn0yzmYdmyzGucUMp5idxfI8YU8bbRCnYwNVqJceWkL0EPdHUjEpb%2BJJvci63B53KkMxeJ5u77FF1ExjH7OsGzxF9lOuaBdxpTUybxG%2B14vH5kUucRa6KvOkekvmCR28CvykqSNR%2BCyReC%2BXxHw%2BAnd6o2r7O58MR6%2FWKhMktxOPpTITjYEOcb%2Bas50JPhuIRpsVPu1pzZD9yxsSZ%2B5hspuzFpIhS6G6cmqpD7nMCwGhKpkM552NdtOynsLY8zjCbJhS2BbCsqgnFpJYZsYvvKMcH4M3Pe11bA10giGxpZYS1wQ7pE7HyJiILe92D0Z3wTSxkyvMEz1ih9t2Eu439%2BF1ggmKLr2msJney1BQMDM5ze%2Bs5mIYFA5ZkRdx6vVZAB5tmsmkp9uJHcGHYKK1fMZeolQwtrL7wAY6rgJJZcrbbjg8haIrqE%2Fb68fg6vNuWlEzCBQfcfYJjlVJmJbXxgTwVsUwFWqBKxHg6IsctL5i1qkbQPBbSt4t0zfkQ9bs4F5cpjSAw1YauidouFFpjy0FHdcxwMLIIdmMemNbSSvlmDocJ41tAmHatrKyw8n1MDuon05kFWbN%2FniNmV%2BdSfYVELiS9%2BFFkgvfq9sHsdWqIOpwAc3L6Psa6uaI%2FvQorwCN5k9ypHj69YiP0A4ke0vc6YDj0wADeedrbCt1RPyvQ%2BshSJFAUjJ7UaSyPW%2F5accKMR44M5EOodRnItt4FcXfBmsLV6OSzpodMljhIcwRuXnIY84Ph2EZDdpZjlXQSh5gpleQRc5E15ZtJRllLa6la2TXHzzwZJWCX7sJZOCpLX4j%2BO3ODrx5Xg%3D%3D&X-Amz-Signature=9fab611df291588e84df41b28eea359bf37aaec0da8dd62f2f845b9686eed907&X-Amz-SignedHeaders=host&response-content-disposition=inline',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-villa-b/4%20Bedroom%20Villas%20SPA%20%E2%80%93%20Type%20B-pages-2.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAX4L76AUXBPXOMNXW%2F20250510%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20250510T072512Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiRjBEAiAckV61G1%2F%2Fznif9QotFTh0gwsUdUv5FDEGYt3sL9CNJQIgIPXM3jyZkgP4tWXa8UKQuXHQWCq6gNOwtj6DcOEoqzAq3wIIof%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1NDE5NzEwNTU5MTgiDAcbdISNo8meYy9w%2FCqzAib%2FpxdARdXUgfhl9NgjpH0cCcmY521AeCtFhICOolYr110TrFmfCqD6uil1yRTrUcbkyc4eDecpVFP1KXxVum86UkD0ytzzBogmvZv41iIwt31sKIFDy0eFion%2F%2Foqtgs3KcNq1x4XtdhARk8UTQm6ynBI%2BQ1OA%2FkiryQTAnZ7Bts5UQVpCJt1oQQoXNdvvHgUP4%2FlAlKz7%2FMm4eTnCJqX5sfDUr8kkWZlePwNG7l6ds2wW1VBPjZ3FNuyuDWbf%2BiBtvDhnDGAyuEo%2Fjmap8Nf2KFdWQtpK12LSPkuhUrRJl4g5%2Bb%2Bmm9Mnpl%2Bx45sZkuiax4gfa8LidmlF1wdG3nbgACRAKATPwMqZM38N7Trp79%2FeB8tzND4n5IiQCXBbgHhRv3%2Fqen8sQbap%2BzLgrjMRRcQwtrL7wAY6rgIK9tmnJRXe8VYgliOHyRF698t1wh59A4ELmwc7WuILH0bfgI2pQZuYQLLup0V2bZBMufixoLhiUqTwHG64wWmac3FFemf%2FTsXmpMUFSemT6ZlOJzjdBoqc4vExWe%2BcPJGqM0vPv6rxqzFovGXOFcHs8J11kV1vU6Os01XDtZtSgdgpF6fA1c7kq5QvpV%2FOxchWnxxx1Q5GDAyODJP3t0awQefPGTSbscF8kizwXJV56COM5nueolOfMU7odQkNIyTWivHYqpBI3Vpo7XPW8iSFRLgcKcosMVwKvYK47lCHzPITtZXUgIkC20ZTHkjfQ73StaEatic2yOY%2FCnmNJD0aJIbzebsHDGdnAr5VtMskmR7%2FOmrVLaoZ%2FeUUV4zXvW%2BreTUSkWSQMMtNgqTaBA%3D%3D&X-Amz-Signature=26d89eedb175e0af1496340466a2441fe46f9dcabf9e931f530f9c39c455ac05&X-Amz-SignedHeaders=host&response-content-disposition=inline',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-villa-b/4%20Bedroom%20Villas%20SPA%20%E2%80%93%20Type%20B-pages-3.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAX4L76AUXI6M5ZGRY%2F20250510%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20250510T072514Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPf%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiRzBFAiEAqgfee3mRXVKW7sFABLBkPKAFeG3CTE7kb%2B6Bzeyu1h8CIGuI%2BWaoEpQMVZDDsIhe4cpaEKQO%2Fp%2BWSRSMHJfvEUd7Kt8CCKH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTQxOTcxMDU1OTE4IgyZ4cxGeN2PgRY7GdgqswLMBe0JbLi69G8UtoLc%2B8tQtwwFgMP3zwgylK05F8He9h87njit3%2F%2B%2BgE7s9pK%2Bd8tfI26POHnBMAHoCMNhMhchJom%2BKxsAyvHcRtiz%2BNFmglQu9SDZ9Loof2UbYX0%2BD5nQjqCjeQ%2BkwFC6gCXw%2BaxDhMpgCBY%2FOSjN6BDwIOQZe9xYtIHW5bwI1BTkKN7%2BKUQreTS3ztfRz8nnSFOGsPw3v%2B2jYALApNOU3sTXmSb2tAbgTGGwwppSksLotljUj9MvXd2KEAzRLfEGYroDhJM%2BuVse3zrZ4p8merUTdVXEqwUh1trDPWv3Gha5dDMnSCyC6%2FswVmHuQMW%2FAv2MTu%2BQtqX58A%2FSsfwUakwFsWcqQZiKH75dOS2S%2FeqXZsIz84IbWi%2FWyfgHnbWQE5OMgYlY4EcDMLay%2B8AGOq0C7LwraA0BtsZhMcwhp7Ga%2F0R3g%2BQstOQBtCv2oRWU1rwq9i%2FExX%2F9u8wzDA7XegR1ClznjvRZd5mThAB9OMPYFJef3JxTjBLZBC%2FcJEYJ9BwMDS%2FKUuYo1LSlsCET5Q6Bgp4EFrkAvCRE%2FYMhSmRgjvi0Y%2Fl7X9Ez%2FEwPLnYkuo9Ci0KE2QUHFcGcsNGrOSf5xueC8cYnGud6PK%2B%2Br6MgaYfvpvtOWmCsEGJfelNmAWqpA65SIjdWOJhZ3tTjlZKwMwWGfxL1ExUm32dD847V8BvIgwCG0END6uA47bGH0Cgy2yAxqvFE%2BqJSwvHlLVZaJlTDZTy1OKqgZVFyOSi6Xg4SQhDnSGupedwz3HutQv2rrGNgSTXhu0eeIiZ0ckyS54kKQ1RCSq2rv1MUdA%3D%3D&X-Amz-Signature=bac820f0043476d661c82144502846af53efcfd2318b3dc42d9656b737c8624a&X-Amz-SignedHeaders=host&response-content-disposition=inline',
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
     ],
   },
   {
@@ -27,6 +27,11 @@ export const VILLAS = [
     aed_sqft: 3699.78,
     full_payment: 32495777,
     year_payment: 33393777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-003',
@@ -39,6 +44,11 @@ export const VILLAS = [
     aed_sqft: 4198.23,
     full_payment: 36873777,
     year_payment: 37891777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-004',
@@ -51,6 +61,11 @@ export const VILLAS = [
     aed_sqft: 3995.91,
     full_payment: 35096777,
     year_payment: 36065777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-005',
@@ -63,6 +78,11 @@ export const VILLAS = [
     aed_sqft: 3728.35,
     full_payment: 32746777,
     year_payment: 33650777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-006',
@@ -75,6 +95,11 @@ export const VILLAS = [
     aed_sqft: 3809.08,
     full_payment: 33455777,
     year_payment: 34379777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-007',
@@ -87,6 +112,11 @@ export const VILLAS = [
     aed_sqft: 3647.29,
     full_payment: 32034777,
     year_payment: 32919777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-008',
@@ -99,6 +129,11 @@ export const VILLAS = [
     aed_sqft: 3602.2,
     full_payment: 31638777,
     year_payment: 32512777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-009',
@@ -111,6 +146,11 @@ export const VILLAS = [
     aed_sqft: 3582.73,
     full_payment: 31467777,
     year_payment: 32336777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-010',
@@ -123,6 +163,11 @@ export const VILLAS = [
     aed_sqft: 3596.74,
     full_payment: 31590777,
     year_payment: 32462777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-011',
@@ -135,6 +180,11 @@ export const VILLAS = [
     aed_sqft: 3432.67,
     full_payment: 30149777,
     year_payment: 30981777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-012',
@@ -147,6 +197,11 @@ export const VILLAS = [
     aed_sqft: 3432.67,
     full_payment: 30149777,
     year_payment: 30981777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-013',
@@ -159,6 +214,11 @@ export const VILLAS = [
     aed_sqft: 3432.67,
     full_payment: 30149777,
     year_payment: 30981777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-4B-014',
@@ -171,6 +231,11 @@ export const VILLAS = [
     aed_sqft: 3585.24,
     full_payment: 31489777,
     year_payment: 32359777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-003',
@@ -183,6 +248,11 @@ export const VILLAS = [
     aed_sqft: 4085.87,
     full_payment: 43859777,
     year_payment: 45070777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-004',
@@ -195,6 +265,11 @@ export const VILLAS = [
     aed_sqft: 4330.13,
     full_payment: 46481777,
     year_payment: 47765777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-006',
@@ -207,6 +282,11 @@ export const VILLAS = [
     aed_sqft: 4138.13,
     full_payment: 44420777,
     year_payment: 45646777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-007',
@@ -219,6 +299,11 @@ export const VILLAS = [
     aed_sqft: 4138.04,
     full_payment: 44419777,
     year_payment: 45645777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-008',
@@ -231,6 +316,11 @@ export const VILLAS = [
     aed_sqft: 4138.04,
     full_payment: 44419777,
     year_payment: 45645777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-009',
@@ -243,6 +333,11 @@ export const VILLAS = [
     aed_sqft: 4138.04,
     full_payment: 44419777,
     year_payment: 45645777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-010',
@@ -255,6 +350,11 @@ export const VILLAS = [
     aed_sqft: 4478.53,
     full_payment: 48074777,
     year_payment: 49401777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-011',
@@ -267,6 +367,11 @@ export const VILLAS = [
     aed_sqft: 4212.94,
     full_payment: 45223777,
     year_payment: 46472777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-012',
@@ -279,6 +384,11 @@ export const VILLAS = [
     aed_sqft: 3619.71,
     full_payment: 38855777,
     year_payment: 39928777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-013',
@@ -291,6 +401,11 @@ export const VILLAS = [
     aed_sqft: 3546.67,
     full_payment: 38071777,
     year_payment: 39123777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-014',
@@ -303,6 +418,11 @@ export const VILLAS = [
     aed_sqft: 3547.05,
     full_payment: 38075777,
     year_payment: 39127777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-015',
@@ -315,6 +435,11 @@ export const VILLAS = [
     aed_sqft: 3538.66,
     full_payment: 37985777,
     year_payment: 39034777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-016',
@@ -327,6 +452,11 @@ export const VILLAS = [
     aed_sqft: 3538.66,
     full_payment: 37985777,
     year_payment: 39034777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-017',
@@ -339,6 +469,11 @@ export const VILLAS = [
     aed_sqft: 3538.66,
     full_payment: 37985777,
     year_payment: 39034777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-018',
@@ -351,6 +486,11 @@ export const VILLAS = [
     aed_sqft: 3719.2,
     full_payment: 39923777,
     year_payment: 41026777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-019',
@@ -363,6 +503,11 @@ export const VILLAS = [
     aed_sqft: 3719.02,
     full_payment: 39921777,
     year_payment: 41024777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-020',
@@ -375,6 +520,11 @@ export const VILLAS = [
     aed_sqft: 3719.02,
     full_payment: 39921777,
     year_payment: 41024777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-021',
@@ -387,6 +537,11 @@ export const VILLAS = [
     aed_sqft: 3719.02,
     full_payment: 39921777,
     year_payment: 41024777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-022',
@@ -399,6 +554,11 @@ export const VILLAS = [
     aed_sqft: 3719.02,
     full_payment: 39921777,
     year_payment: 41024777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-023',
@@ -411,6 +571,11 @@ export const VILLAS = [
     aed_sqft: 3952.38,
     full_payment: 42426777,
     year_payment: 43598777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-024',
@@ -423,6 +588,11 @@ export const VILLAS = [
     aed_sqft: 3952.38,
     full_payment: 42426777,
     year_payment: 43598777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-025',
@@ -435,6 +605,11 @@ export const VILLAS = [
     aed_sqft: 3898.34,
     full_payment: 41846777,
     year_payment: 43002777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-026',
@@ -447,6 +622,11 @@ export const VILLAS = [
     aed_sqft: 3885.68,
     full_payment: 41710777,
     year_payment: 42862777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-027',
@@ -459,6 +639,11 @@ export const VILLAS = [
     aed_sqft: 3685.2,
     full_payment: 39558777,
     year_payment: 40650777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-028',
@@ -471,6 +656,11 @@ export const VILLAS = [
     aed_sqft: 4441.55,
     full_payment: 47677777,
     year_payment: 48993777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-029',
@@ -483,6 +673,11 @@ export const VILLAS = [
     aed_sqft: 3837.61,
     full_payment: 41194777,
     year_payment: 42331777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-031',
@@ -495,6 +690,11 @@ export const VILLAS = [
     aed_sqft: 3583.94,
     full_payment: 38471777,
     year_payment: 39533777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-032',
@@ -507,6 +707,11 @@ export const VILLAS = [
     aed_sqft: 3677.65,
     full_payment: 39477777,
     year_payment: 40567777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-033',
@@ -519,6 +724,11 @@ export const VILLAS = [
     aed_sqft: 3786.28,
     full_payment: 40643777,
     year_payment: 41765777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-5B-034',
@@ -531,6 +741,11 @@ export const VILLAS = [
     aed_sqft: 3868.81,
     full_payment: 41529777,
     year_payment: 42676777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-6B-011',
@@ -543,6 +758,11 @@ export const VILLAS = [
     aed_sqft: 5020.88,
     full_payment: 69583777,
     year_payment: 71505777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-6B-012',
@@ -555,6 +775,11 @@ export const VILLAS = [
     aed_sqft: 4070.23,
     full_payment: 56408777,
     year_payment: 57966777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-6B-013',
@@ -567,6 +792,11 @@ export const VILLAS = [
     aed_sqft: 5202.71,
     full_payment: 72103777,
     year_payment: 74094777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-6B-014',
@@ -579,6 +809,11 @@ export const VILLAS = [
     aed_sqft: 4976.14,
     full_payment: 68963777,
     year_payment: 70867777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-6B-015',
@@ -591,6 +826,11 @@ export const VILLAS = [
     aed_sqft: 4325.3,
     full_payment: 59943777,
     year_payment: 61599777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-6B-016',
@@ -603,6 +843,11 @@ export const VILLAS = [
     aed_sqft: 4078.74,
     full_payment: 56526777,
     year_payment: 58087777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-6B-017',
@@ -615,6 +860,11 @@ export const VILLAS = [
     aed_sqft: 3826.41,
     full_payment: 53029777,
     year_payment: 54493777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-6B-018',
@@ -627,6 +877,11 @@ export const VILLAS = [
     aed_sqft: 3933.13,
     full_payment: 54508777,
     year_payment: 56013777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-6B-019',
@@ -639,6 +894,11 @@ export const VILLAS = [
     aed_sqft: 4247.15,
     full_payment: 58860777,
     year_payment: 60485777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
   {
     unit_code: 'VILLA-6B-020',
@@ -651,5 +911,10 @@ export const VILLAS = [
     aed_sqft: 4249.39,
     full_payment: 58891777,
     year_payment: 60517777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6 Bedroom Villas SPA-images-2.jpg',
+    ],
   },
 ];

@@ -11,6 +11,16 @@
     width: 82%;
  }
 
+ .form-container {
+    width: 100%;
+  }
+  
+  @media (min-width: 768px) {
+    .form-container {
+      width: 50%;
+    }
+  }
+  
 
 
 
