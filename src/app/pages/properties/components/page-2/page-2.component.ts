@@ -23,10 +23,11 @@ export class Page2Component {
 
   getPropertyType() {
     if (this.selectedProperty()?.isAppartment) {
-      return this.selectedProperty()?.bedrooms.toLowerCase() === '5 Bedroom'
+      return this.selectedProperty()?.bedrooms.toLowerCase() ===
+        '5 Bedroom'.toLowerCase()
         ? 'Penthouse'
         : 'Appartment';
     }
-    return '';
+    return 'Villa';
   }
 }

@@ -13,7 +13,7 @@ export const APPARTMENTS = [
     full_payment: 10477777,
     year_payment: 10767777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/bed-4-b.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-0.jpg',
     ],
   },
   {
@@ -29,8 +29,9 @@ export const APPARTMENTS = [
     aed_sqft: 2946,
     full_payment: 16075777,
     year_payment: 16519777,
-    imgUrl:
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA%20RESI%20APT_SPA-All%20%28Ex-Penthouse%29-pages-2.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAX4L76AUXMWDRHD2N%2F20250510%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20250510T051434Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiRjBEAiAGlGKfRetDQXEMQZH09vjfhB5fMT9JDU8wNz3UT%2FQR5wIgBAqkn9%2FbnadrKIxR5pK1jZcusD7p1%2Bx0rds3Ykjyht0q3wIInv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1NDE5NzEwNTU5MTgiDOtIKoJwpuQ0L97CiCqzAkhX%2BQysmB2YCTU0RbzGKBwtwPhJDKIJxhyopmGGFN9StZ55ptcu9IzedoUPGUqYXiTWfxmwOMQs5uns3A%2FbuUgDXIgB9HjaTROF%2F1DFpkhlIb9ddMrBFDGJzbULH0%2BaAyJ5R%2B0Z9T%2ByIUZvtMne9WM3yz%2BwTFmuZhoAjxLgpYVN5S560%2Fjymbc5DI%2FDw3KhErnpPQDPlTOPWjMv5US%2B7mpsIiUv7rgn9IocmcZ2papu9P%2BZZwRNYpY0p%2FiIllpSIKYbtAg7T2wn2B6oXvO1wELcf3tU2%2Fwp%2FPdACcaboRj7zEWSafTJqUufgbeFz7iOMCTW3Y1UwRxtpnx529YGyLWUBb%2FPHpD%2BINImCGOxuYewi7TmIPhgmiFl7El%2F7wmjJE5h955THRwrBo0TMzPXlAZUmtowtrL7wAY6rgKFFeX1QaiDhS1JPSSSRrNX37x3L2Z5GM2r7wtekVl8M%2Bpvdjx2vAPApNiU%2FquRxSPq0eSkyZrf3iFq%2BA59Bu1dJczb6%2FJr1yPfT160MilE69c0plQI%2FJMmHEuBaCzBx9lYsz5hH85Yn2Ycc%2F3BadRlXVUu70UtNytWTxlc%2FJGXv7gX5FWqPvEwmSdx6G4ax%2B3Sqd79lL1jd83YIvhjIEmN%2BvAzoh%2FH4gZOAKkhY%2BdOFhWd3EUMrd2RG6lOXYBAl5L288PsEygHN86KN85c7FNn%2F5fTf9eDHbP59XsPMTN5bHq6GCWVaKPew3jzGbyhHT96d1wLz1jTBCUKn%2BI9kEL3oEJCtNO3Lb7b374vgVyfMFk7U%2Bski4vv3gxm%2B73%2B0H1kRxk9IsnLJ2p6eiRZOg%3D%3D&X-Amz-Signature=c2271f19a469b76e4e1cb014e2871174d42623846aab68bd45be3e817c4b6b9a&X-Amz-SignedHeaders=host&response-content-disposition=inline',
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-1.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-003',
@@ -45,8 +46,9 @@ export const APPARTMENTS = [
     aed_sqft: 3420,
     full_payment: 16223777,
     year_payment: 16671777,
-    imgUrl:
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA%20RESI%20APT_SPA-All%20%28Ex-Penthouse%29-pages-3.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAX4L76AUXNJ63YGFY%2F20250510%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20250510T051713Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiRzBFAiEAn4WX1hs5jzM%2Fd2YAauQ1d96QIujc0jAecLGl6a%2Ba%2BrYCIH0noBByFd6d8IJ5%2BL37x8usHRm8ucNo6xyvSjt%2B1TAPKt8CCJ7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNTQxOTcxMDU1OTE4Igy0PGcKo0HZoLUsSV4qswJUYOyQq49DhMntwmT8RhA9%2Fhc73VmcMR5%2B5%2FRwmAitasp0oQ%2BEdpQ4Y9RMfwMTEiAeIVZQPy1RCcQWh0gWwR1vI8mtUZgGkgrpyM6iM3r8x5Av2bCDsTWRWkDovg38uma0aCvWKZV9RdR8MKfxeGTgWDLYvQsUpP87WPAydPrJjnWswGoh8MWJyCpq3ZRhBes%2B0lKMOdiNyZB9%2FV%2BEt99hrPEnEOOj7iurEBkm6qrA92hH231aissPioXYC4%2F5%2FaLlOYtPK6fT2u2gmkOE7xznrw0NipS2FchDZO8er%2Fayg0C%2F6mALQVpYnQctJy40VhQC9V3RSOdoJhBByzjDrbfV2kLlLLmAUtDLw1J1F9YOs405xfSx3%2FKZoHTw5Xdi%2FMVU8eryzgQBJ%2FH26bQHmPX924lqMLay%2B8AGOq0C082XgX8rk7Vdy8a5m7yIj0QjxzXl8FpiRRqCZW5tbH7C%2BRlsoOs2bAM%2FzITYLY%2FB%2FPdKF3tTFRJANAsWUvm3Hg%2BOGBYGmvigWaUpvgpTo0qV8jsTgp9OMuiebPNEBGEYORTOCqH3JDJCJGj%2Fn%2FU7%2B0jhdJpdlt80V8cp734KMg2%2FJHjjS7NFFKKN1k%2BkemSpEz34i%2FCPa3FOIpPKXn%2F8s33jL0lVBr4MyCaxNwRh0i03Gec2sYptPVTF69rbg%2FNYAF6qje8FtdxoNetU8Iqpnic9a%2FBApYs5a%2BaOvAeEnEtzO7MwslDLv9edUNSPddCKmL3SOj2Qrj%2BMiuTlc%2BlRdEedLN1%2Bch5J4BDyQuvFCIzPtJNkydsaJlxygoAg4K2p2JrE242fKQZPEFRX7g%3D%3D&X-Amz-Signature=ddc4384ef9b6c2630ebf9cc0b38deffa5a67afc8c297274ecdd22024aa9d67d7&X-Amz-SignedHeaders=host&response-content-disposition=inline',
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-2.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-004',
@@ -61,8 +63,9 @@ export const APPARTMENTS = [
     aed_sqft: 3231,
     full_payment: 12457777,
     year_payment: 12801777,
-    imgUrl:
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA%20RESI%20APT_SPA-All%20%28Ex-Penthouse%29-pages-4.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAX4L76AUXDUCEM6TF%2F20250510%2Feu-north-1%2Fs3%2Faws4_request&X-Amz-Date=20250510T051729Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmV1LW5vcnRoLTEiRjBEAiB14k2X%2F1uqaUEn6RNpScC9ayCoj%2BNiEP1eAi2MFg6mzwIgZ%2F4inKqP6sLkgUeIMcHhzKrPBI3o4LKSQ3sF9VISM1Yq3wIInv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw1NDE5NzEwNTU5MTgiDGaqBMdpZNSc%2FY0mgCqzAumyK4KeMyK%2Fkgz2v5%2F0DLLKuQ4YkrM99vqdzPOwCioR0VaAgVqKxRLCAmySuybKDDdAKzs3iKWEJfnhXXfhSNpwoN5aP%2F8Z7wquJ05pKe%2Fa21wmrZ1hQg%2BoBFPFofAUGPlhUIyvRx8KU%2FxRLjNZtwrUZ4mJEUh5x2L8ohMNsuNLAA9C93VT6xxSgmTRJp3Xtd5oUWC8ceX7BaxQ%2FYOqgx6dCQae0kNFlYXRFGVXv4mMsK5geEktpmWfYhSkoaieib6rpy4VMY3LxQ04kfNAbe9dBNdhqA6%2BJsw2TMO%2FmxHeKwDVqkwdpLKhTczf32XgDedZrs0o8OoqXLCgeMw3JlHdtoin8s%2FxT4DlYnQKc6mDlDSIRICXW8zShSCx3A1pf%2BSrDgSIlr7lKmauSf8fPf169RcwtrL7wAY6rgJgPZDf%2B7hUDpqGg61mIbZ1ug90D%2BBXgGecfRhg2qHW4QBnbe640%2FsXyCjwDsHbnRJNr%2BoRibzmFzF5M3ZaCUvWgl9kQnFCDs2UoISt5GzjM8yk3XVDWyzcxCuTQxGLyXSdMmqDIH296%2BfCjyn9qngB4Baf0inO90yW1MyVaiK5RJQzC1DGMkDqeITlKM9FMcT6ZHGbe%2FsuE%2FG%2F4jKQwnupoOTA1250PMUCibydEu2HMSpKD9b%2Ftt8SYV4xFyf%2BaZMk7MFTJBVYhXBRGoxLZME0V%2BiGY%2FhdEJ7agycuYrbzJ1%2BP0Awt4wFgLrh1mZZjmPJ9c4Hdlw0J%2F%2FnATZ2EAbALjgvzK9s7b1hAbDngeAKlWleV%2F1I6QXxI3AGutocvG3SrUD8vximY%2FEDwgiDeIg%3D%3D&X-Amz-Signature=51531cccdd1d3b0b65307b4b627e8535b640bcd4a9f413f44564e3a12e072d76&X-Amz-SignedHeaders=host&response-content-disposition=inline',
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-3.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-006',
@@ -77,6 +80,9 @@ export const APPARTMENTS = [
     aed_sqft: 3440,
     full_payment: 15928777,
     year_payment: 16368777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-5.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-101',
@@ -91,6 +97,9 @@ export const APPARTMENTS = [
     aed_sqft: 2835,
     full_payment: 9098777,
     year_payment: 9350777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-6.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-102',
@@ -105,6 +114,9 @@ export const APPARTMENTS = [
     aed_sqft: 3380,
     full_payment: 15077777,
     year_payment: 15493777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-7.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-104',
@@ -119,6 +131,9 @@ export const APPARTMENTS = [
     aed_sqft: 3461,
     full_payment: 11032777,
     year_payment: 11337777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-9.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-107',
@@ -133,6 +148,9 @@ export const APPARTMENTS = [
     aed_sqft: 3177,
     full_payment: 12892777,
     year_payment: 13248777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-12.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-201',
@@ -147,6 +165,9 @@ export const APPARTMENTS = [
     aed_sqft: 2928,
     full_payment: 9395777,
     year_payment: 9654777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-15.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-202',
@@ -161,6 +182,9 @@ export const APPARTMENTS = [
     aed_sqft: 3478,
     full_payment: 15516777,
     year_payment: 15945777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-16.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-207',
@@ -175,6 +199,9 @@ export const APPARTMENTS = [
     aed_sqft: 3270,
     full_payment: 13267777,
     year_payment: 13634777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-21.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-301',
@@ -189,6 +216,9 @@ export const APPARTMENTS = [
     aed_sqft: 3021,
     full_payment: 9694777,
     year_payment: 9961777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-24.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-401',
@@ -203,6 +233,9 @@ export const APPARTMENTS = [
     aed_sqft: 3115,
     full_payment: 9997777,
     year_payment: 10273777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-33.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-502',
@@ -217,6 +250,9 @@ export const APPARTMENTS = [
     aed_sqft: 3703,
     full_payment: 32464777,
     year_payment: 33361777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-43.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-601',
@@ -231,6 +267,9 @@ export const APPARTMENTS = [
     aed_sqft: 7646,
     full_payment: 137232777,
     year_payment: 141022777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/Penthouse_SPA-images-0.jpg',
+    ],
   },
   {
     unit_code: 'SHA-APT-602',
@@ -245,5 +284,8 @@ export const APPARTMENTS = [
     aed_sqft: 7532,
     full_payment: 141010777,
     year_payment: 144904777,
+    imgUrl: [
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/Penthouse_SPA-images-1.jpg',
+    ],
   },
 ];
