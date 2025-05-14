@@ -39,18 +39,21 @@
             <div class="col-md-6 hstack justify-content-between">{{selectedProperty()?.isAppartment?'Appartment':'Villa'}} Type: <p class="text-end mb-0">{{getPropertyType()}} </p></div>
             @if (this.selectedProperty()?.isAppartment) {
                 <div class="col-md-6 hstack justify-content-between">Total Area: <p class="text-end mb-0">{{selectedProperty()?.sqft}}</p></div>
+            }@else {
+                <div class="col-md-6 hstack justify-content-between">Bedrooms: <p class="text-end mb-0">{{selectedProperty()?.bedrooms}}</p></div>
             }
 
         </div>
+        @if (this.selectedProperty()?.isAppartment) {
         <div class="row justify-content-between mb-2 " >
-            <div class="col-md-6 hstack justify-content-between bg-dark">Bedrooms: <p class="text-end mb-0">{{selectedProperty()?.bedrooms}}</p></div>
-            <!-- <div class="col-md-6 hstack justify-content-between bg-dark">AED/SQFT: <p class="text-end mb-0">{{selectedProperty()?.aed_sqft | currency:'AED ':'code':'1.2-2' }}</p></div> -->
-        </div>
+                <div class="col-md-6 hstack justify-content-between bg-dark">Bedrooms: <p class="text-end mb-0">{{selectedProperty()?.bedrooms}}</p></div>
+                <div class="col-md-6 hstack justify-content-between bg-dark">View: <p class="text-end text-capitalize mb-0">{{selectedProperty()?.view}}</p></div>
+                <!-- <div class="col-md-6 hstack justify-content-between bg-dark">AED/SQFT: <p class="text-end mb-0">{{selectedProperty()?.aed_sqft | currency:'AED ':'code':'1.2-2' }}</p></div> -->
+            </div>
+        }
         <div class="row justify-content-between mb-2 " >
             @if (!this.selectedProperty()?.isAppartment) {
-                <div class="col-md-6 hstack justify-content-between">Plot Area: <p class="text-end mb-0">{{convertToSquareFeet(selectedProperty()?.plot_area) | number:'1.2-2'}}</p></div>
-            }@else {
-                <div class="col-md-6 hstack justify-content-between">View: <p class="text-end text-capitalize mb-0">{{selectedProperty()?.view}}</p></div>
+                <div class="col-md-6 hstack justify-content-between bg-dark">Plot Area: <p class="text-end mb-0">{{convertToSquareFeet(selectedProperty()?.plot_area) | number:'1.2-2'}}</p></div>
             }
             <!-- <div class="col-md-6 hstack justify-content-between">50/50 Full Payment on Completion: <p class="text-end mb-0">{{selectedProperty()?.full_payment}}</p></div> -->
         </div>
