@@ -56,7 +56,7 @@
           <ng-template ngbNavContent>
             @for (item of selectedProperty?.imgUrl; track $index) {
               <div class="d-flex justify-content-center">
-                  <app-page-3 [imgUrl]="item"/>
+                  <app-page-3 [imgUrl]="item" [isApartment]="selectedProperty?.isAppartment"/>
               </div>
               }
           </ng-template>

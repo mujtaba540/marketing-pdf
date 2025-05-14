@@ -14,7 +14,6 @@ import { parseNumber } from '../../../../shared/utils/app.utils';
 import { InputRadioComponent } from '../../../../ui-components/components/input-radio/input-radio.component';
 import { APPARTMENTS } from '../../../../shared/constants/new-apt';
 import { VILLAS } from '../../../../shared/constants/new-villa';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { PrintViewComponent } from '../print-view/print-view.component';
 import { Page3Component } from '../page-3/page-3.component';
@@ -28,7 +27,6 @@ import { Page3Component } from '../page-3/page-3.component';
     ButtonComponent,
     Page2Component,
     InputRadioComponent,
-    PdfViewerModule,
     NgbNavModule,
     PrintViewComponent,
     Page3Component,

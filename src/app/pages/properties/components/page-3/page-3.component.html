@@ -4,7 +4,7 @@
     </div>
     <div class="img-fluid-print">
         <!-- <div class="d-flex justify-content-center"> -->
-            <img [src]="imgUrl()" class="img-fluid-print" />
+            <img [src]="imgUrl()" class="img-fluid-print" [ngClass]="{'landscape-img': isApartment()}" />
         <!-- </div> -->
     </div>
 </div>
