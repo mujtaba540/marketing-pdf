@@ -14,6 +14,7 @@ export const APPARTMENTS = [
     year_payment: 10767777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-1.jpeg',
     ],
   },
   {
@@ -31,6 +32,7 @@ export const APPARTMENTS = [
     year_payment: 16519777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-2.jpeg',
     ],
   },
   {
@@ -48,6 +50,7 @@ export const APPARTMENTS = [
     year_payment: 16671777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-2.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-3.jpeg',
     ],
   },
   {
@@ -65,6 +68,7 @@ export const APPARTMENTS = [
     year_payment: 12801777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-3.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-4.jpeg',
     ],
   },
   {
@@ -82,6 +86,7 @@ export const APPARTMENTS = [
     year_payment: 16368777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-5.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-6.jpeg',
     ],
   },
   {
@@ -99,6 +104,7 @@ export const APPARTMENTS = [
     year_payment: 9350777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-6.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-101.jpeg',
     ],
   },
   {
@@ -116,6 +122,7 @@ export const APPARTMENTS = [
     year_payment: 15493777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-7.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-102.jpeg',
     ],
   },
   {
@@ -133,6 +140,7 @@ export const APPARTMENTS = [
     year_payment: 11337777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-9.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-104.jpeg',
     ],
   },
   {
@@ -150,6 +158,7 @@ export const APPARTMENTS = [
     year_payment: 13248777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-12.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-107.jpeg',
     ],
   },
   {
@@ -167,6 +176,7 @@ export const APPARTMENTS = [
     year_payment: 9654777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-15.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-201.jpeg',
     ],
   },
   {
@@ -184,6 +194,7 @@ export const APPARTMENTS = [
     year_payment: 15945777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-16.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-202.jpeg',
     ],
   },
   {
@@ -201,6 +212,7 @@ export const APPARTMENTS = [
     year_payment: 13634777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-21.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-207.jpeg',
     ],
   },
   {
@@ -218,6 +230,7 @@ export const APPARTMENTS = [
     year_payment: 9961777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-24.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-301.jpeg',
     ],
   },
   {
@@ -235,6 +248,7 @@ export const APPARTMENTS = [
     year_payment: 10273777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-33.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-401.jpeg',
     ],
   },
   {
@@ -252,6 +266,7 @@ export const APPARTMENTS = [
     year_payment: 33361777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/240613_SHA RESI APT_SPA-All (Ex-Penthouse)-images-43.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-502.jpeg',
     ],
   },
   {
@@ -269,6 +284,7 @@ export const APPARTMENTS = [
     year_payment: 141022777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/Penthouse_SPA-images-0.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-601.jpeg',
     ],
   },
   {
@@ -286,6 +302,7 @@ export const APPARTMENTS = [
     year_payment: 144904777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/Penthouse_SPA-images-1.jpg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps/apt-602.jpeg',
     ],
   },
 ];

@@ -4,8 +4,8 @@
     </div>
     <div class="d-flex justify-content-center mt-3">
         <div class="text-center bg-dark rounded-pill px-5 sales-container py-2">
-            <h4 class="fw-bold mb-0">SALES OFFER</h4>
-            <p class="mb-0">Unit Details: {{selectedProperty()?.unit_code}}</p>
+            <h4 class="fw-bold mb-0 text-uppercase">Unit Details</h4>
+            <p class="mb-0">{{selectedProperty()?.unit_code}}</p>
         </div>
     </div>
 
@@ -37,7 +37,10 @@
         </div>
         <div class="row justify-content-between mb-2 " >
             <div class="col-md-6 hstack justify-content-between">{{selectedProperty()?.isAppartment?'Appartment':'Villa'}} Type: <p class="text-end mb-0">{{getPropertyType()}} </p></div>
-            <div class="col-md-6 hstack justify-content-between">Total Area: <p class="text-end mb-0">{{selectedProperty()?.sqft}}</p></div>
+            @if (this.selectedProperty()?.isAppartment) {
+                <div class="col-md-6 hstack justify-content-between">Total Area: <p class="text-end mb-0">{{selectedProperty()?.sqft}}</p></div>
+            }
+
         </div>
         <div class="row justify-content-between mb-2 " >
             <div class="col-md-6 hstack justify-content-between bg-dark">Bedrooms: <p class="text-end mb-0">{{selectedProperty()?.bedrooms}}</p></div>
@@ -123,7 +126,7 @@
     </div>
 
     <p class="note-text fst-italic text-center print-only">
-        Note: Please note this payment plan is provided for your information only and is not an obligation or commitment by Imtiaz Developments.
+        Note: Please note this payment plan is provided for your information only and is not an obligation or commitment by Imkan.
         We calculate the Unit sizes as accurately as possible but they may be subject to final changes. This offer remains valid for 24hrs only and is subject to the availability of the Unit. The currency exchange rate will be determined at the time of payment.
     </p>
 </div>
