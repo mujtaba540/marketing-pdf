@@ -30,7 +30,7 @@
         <div class="row justify-content-between mb-2 " >
             <div class="col-md-6 hstack justify-content-between bg-dark">Plot Number: <p class="text-end mb-0">{{selectedProperty()?.unit_code}}</p></div>
             @if (!this.selectedProperty()?.isAppartment) {
-                <div class="col-md-6 hstack justify-content-between bg-dark">BUA: <p class="text-end mb-0">{{selectedProperty()?.bua}}</p></div>
+                <div class="col-md-6 hstack justify-content-between bg-dark">BUA: <p class="text-end mb-0">{{convertToSquareFeet(selectedProperty()?.bua)| number:'1.2-2'}}</p></div>
             }@else {
                 <div class="col-md-6 hstack justify-content-between bg-dark">Balcony Size: <p class="text-end mb-0">{{selectedProperty()?.bal_sqft}}</p></div>
             }
@@ -44,11 +44,11 @@
         </div>
         <div class="row justify-content-between mb-2 " >
             <div class="col-md-6 hstack justify-content-between bg-dark">Bedrooms: <p class="text-end mb-0">{{selectedProperty()?.bedrooms}}</p></div>
-            <div class="col-md-6 hstack justify-content-between bg-dark">AED/SQFT: <p class="text-end mb-0">{{selectedProperty()?.aed_sqft | currency:'AED ':'code':'1.2-2' }}</p></div>
+            <!-- <div class="col-md-6 hstack justify-content-between bg-dark">AED/SQFT: <p class="text-end mb-0">{{selectedProperty()?.aed_sqft | currency:'AED ':'code':'1.2-2' }}</p></div> -->
         </div>
         <div class="row justify-content-between mb-2 " >
             @if (!this.selectedProperty()?.isAppartment) {
-                <div class="col-md-6 hstack justify-content-between">Plot Area: <p class="text-end mb-0">{{selectedProperty()?.plot_area}}</p></div>
+                <div class="col-md-6 hstack justify-content-between">Plot Area: <p class="text-end mb-0">{{convertToSquareFeet(selectedProperty()?.plot_area) | number:'1.2-2'}}</p></div>
             }@else {
                 <div class="col-md-6 hstack justify-content-between">View: <p class="text-end text-capitalize mb-0">{{selectedProperty()?.view}}</p></div>
             }

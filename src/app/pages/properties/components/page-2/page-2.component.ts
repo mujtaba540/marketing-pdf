@@ -30,4 +30,11 @@ export class Page2Component {
     }
     return 'Villa';
   }
+
+  convertToSquareFeet(value: number) {
+    if (!this.selectedProperty()?.isAppartment) {
+      return value * 10.7639;
+    }
+    return value;
+  }
 }
