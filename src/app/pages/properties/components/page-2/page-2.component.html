@@ -5,7 +5,7 @@
     <div class="d-flex justify-content-center mt-3">
         <div class="text-center bg-dark rounded-pill px-5 sales-container py-2">
             <h4 class="fw-bold mb-0">SALES OFFER</h4>
-            <p class="mb-0">Unit No: {{selectedProperty()?.unit_code}}</p>
+            <p class="mb-0">Unit Details: {{selectedProperty()?.unit_code}}</p>
         </div>
     </div>
 
@@ -18,7 +18,7 @@
     <div class="bordered-box mb-2">
         <div class="section-title">PROJECTS DETAILS</div>
         <div class="row justify-content-between  mb-2">
-            <div class="col-md-6 project-name bg-dark hstack justify-content-between">Project Name: <p class="text-end mb-0">SHA Island AlJurf</p></div>
+            <div class="col-md-6 project-name bg-dark hstack justify-content-between">Project Name: <p class="text-end mb-0">SHA Residences</p></div>
             <div class="col-md-6 bg-dark hstack justify-content-between">Location:  <p class="text-end mb-0">SHA Islands AlJurf</p></div>
         </div>
         <div class="row justify-content-between mb-2">
@@ -29,11 +29,15 @@
         <div class="section-title">PROPERTY DETAILS & SIZING DETAILS</div>
         <div class="row justify-content-between mb-2 " >
             <div class="col-md-6 hstack justify-content-between bg-dark">Plot Number: <p class="text-end mb-0">{{selectedProperty()?.unit_code}}</p></div>
-            <div class="col-md-6 hstack justify-content-between bg-dark">BUA: <p class="text-end mb-0">{{selectedProperty()?.bua}}</p></div>
+            @if (!this.selectedProperty()?.isAppartment) {
+                <div class="col-md-6 hstack justify-content-between bg-dark">BUA: <p class="text-end mb-0">{{selectedProperty()?.bua}}</p></div>
+            }@else {
+                <div class="col-md-6 hstack justify-content-between bg-dark">Balcony Size: <p class="text-end mb-0">{{selectedProperty()?.bal_sqft}}</p></div>
+            }
         </div>
         <div class="row justify-content-between mb-2 " >
             <div class="col-md-6 hstack justify-content-between">{{selectedProperty()?.isAppartment?'Appartment':'Villa'}} Type: <p class="text-end mb-0">{{getPropertyType()}} </p></div>
-            <div class="col-md-6 hstack justify-content-between">SQFT: <p class="text-end mb-0">{{selectedProperty()?.sqft}}</p></div>
+            <div class="col-md-6 hstack justify-content-between">Total Area: <p class="text-end mb-0">{{selectedProperty()?.sqft}}</p></div>
         </div>
         <div class="row justify-content-between mb-2 " >
             <div class="col-md-6 hstack justify-content-between bg-dark">Bedrooms: <p class="text-end mb-0">{{selectedProperty()?.bedrooms}}</p></div>
@@ -42,6 +46,8 @@
         <div class="row justify-content-between mb-2 " >
             @if (!this.selectedProperty()?.isAppartment) {
                 <div class="col-md-6 hstack justify-content-between">Plot Area: <p class="text-end mb-0">{{selectedProperty()?.plot_area}}</p></div>
+            }@else {
+                <div class="col-md-6 hstack justify-content-between">View: <p class="text-end text-capitalize mb-0">{{selectedProperty()?.view}}</p></div>
             }
             <!-- <div class="col-md-6 hstack justify-content-between">50/50 Full Payment on Completion: <p class="text-end mb-0">{{selectedProperty()?.full_payment}}</p></div> -->
         </div>
@@ -49,10 +55,10 @@
     </div>
 
     <div class="bordered-box mb-4">
-        <div class="section-title">PAYMENT PLAN - 50/50 Till Completion</div>
+        <div class="section-title">PAYMENT PLAN - 50/50</div>
         <div class="d-flex justify-content-between gap-1 align-item-center">
             <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.full_payment | currency:'AED ':'code':'1.2-2'}}</span>
-            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> xxx</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> {{2000 | currency:'AED ':'code':'1.2-2'}}</span>
             <span class="bg-dark fw-bold flex-grow-1 p-2">
                 <strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.full_payment) | currency:'AED ':'code':'1.2-2'}}
                 <p class="mb-0 hint-text fw-lighter">*To be paid with booking fee</p>
@@ -86,7 +92,7 @@
         <div class="section-title">PAYMENT PLAN - 70/30 PH</div>
         <div class="d-flex justify-content-between gap-1 align-item-center">
             <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.year_payment | currency:'AED ':'code':'1.2-2'}}</span>
-            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> xxx</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> {{2000 | currency:'AED ':'code':'1.2-2'}}</span>
             <span class="bg-dark fw-bold flex-grow-1 p-2">
                 <strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.year_payment) | currency:'AED ':'code':'1.2-2'}}
                 <p class="mb-0 hint-text fw-lighter">*To be paid with booking fee</p>
