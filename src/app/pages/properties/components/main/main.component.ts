@@ -117,7 +117,7 @@ export class MainComponent {
         { label: '2d installment', monthsGap: 6, percentage: 10 },
         { label: '3d installment', monthsGap: 9, percentage: 10 },
         { label: '4th installment', monthsGap: 12, percentage: 10 },
-        { label: 'On completion', monthsGap: 21, percentage: 50 },
+        { label: 'On completion', monthsGap: 0, percentage: 50 }, // fixed date
       ],
       option2: [
         { label: 'Booking Date', monthsGap: 0, percentage: 10 },
@@ -125,9 +125,9 @@ export class MainComponent {
         { label: '2d installment', monthsGap: 6, percentage: 10 },
         { label: '3d installment', monthsGap: 9, percentage: 10 },
         { label: '4th installment', monthsGap: 12, percentage: 10 },
-        { label: 'On completion', monthsGap: 22, percentage: 20 },
-        { label: '1st PH installment', monthsGap: 34, percentage: 15 },
-        { label: '2d PH installment', monthsGap: 46, percentage: 15 },
+        { label: 'On completion', monthsGap: 0, percentage: 20 }, // fixed date
+        { label: '1st PH installment', monthsGap: 12, percentage: 15 }, // after completion
+        { label: '2d PH installment', monthsGap: 24, percentage: 15 }, // after completion
       ],
     };
 
@@ -140,17 +140,32 @@ export class MainComponent {
     const booking =
       typeof bookingDate === 'string' ? new Date(bookingDate) : bookingDate;
 
+    const completionDate = new Date('2027-03-31');
+
     const calculate = (
       schedule: { label: string; monthsGap: number; percentage: number }[],
       inputPrice: number
     ) => {
-      return schedule.map((entry) => ({
-        label: entry.label,
-        monthsGap: entry.monthsGap,
-        percentage: `${entry.percentage}%`,
-        amount: (inputPrice * entry.percentage) / 100,
-        date: addMonths(booking, entry.monthsGap),
-      }));
+      return schedule.map((entry) => {
+        let date: Date;
+
+        const labelLower = entry.label.toLowerCase();
+        if (labelLower === 'on completion') {
+          date = completionDate;
+        } else if (labelLower.includes('ph installment')) {
+          date = addMonths(completionDate, entry.monthsGap);
+        } else {
+          date = addMonths(booking, entry.monthsGap);
+        }
+
+        return {
+          label: entry.label,
+          monthsGap: entry.monthsGap,
+          percentage: `${entry.percentage}%`,
+          amount: (inputPrice * entry.percentage) / 100,
+          date,
+        };
+      });
     };
 
     const option1 = calculate(schedules.option1, price);
