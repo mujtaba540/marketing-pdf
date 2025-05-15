@@ -1,7 +1,12 @@
 .page-size {
-    width: 794px;
     height: 1123px;
-}
+    font-size: 10px;
+    @media (min-width: 768px) {
+    font-size: inherit;
+    width: 768px;
+    }
+  }
+  
 
 
 
