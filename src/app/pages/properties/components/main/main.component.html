@@ -47,8 +47,8 @@
         </div>
         <span class=" hstack gap-2 align-self-end pb-s">
           <app-button [label]="'Calculate'" [classList]="'btn-primary'" [icon]="'fa-solid fa-plus'"
-            (onClick)="onSubmit()" />
-          <app-button [label]="'Download'" [classList]="'btn-outline-danger'" [disabled]="!templateForm.valid"
+            (onClick)="onSubmit()" [disabled]="!templateForm.valid || isLoading" />
+          <app-button [label]="'Download'" [classList]="'btn-outline-danger'" [disabled]="!templateForm.valid || isLoading"
             [icon]="'fa-solid fa-plus'" [icon]="'bi bi-printer'" [showSpinner]="isLoading" (onClick)="openPrint()" />
         </span>
         

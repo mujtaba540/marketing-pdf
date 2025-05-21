@@ -108,20 +108,17 @@ export class MainComponent {
           const fileName = `sales-offer-${this.selectedProperty.unit_code}.pdf`;
           const blobUrl = URL.createObjectURL(blob);
 
-          if (this.isMobileBrowser()) {
-            // For mobile browsers, open the PDF in a new tab
-            window.open(blobUrl, '_blank');
-            // The browser's built-in PDF viewer should handle download options
-          } else {
-            // For desktop browsers, trigger download via <a> tag
-            const link = document.createElement('a');
-            link.href = blobUrl;
-            link.download = fileName;
-            document.body.appendChild(link); // Append to the document
-            link.click();
-            document.body.removeChild(link); // Clean up the appended link
-            URL.revokeObjectURL(blobUrl); // Cleanup the blob URL
-          }
+          const a = document.createElement('a');
+          a.href = blobUrl;
+          a.download = fileName;
+
+          // Append to body and trigger click
+          document.body.appendChild(a);
+          a.click();
+
+          // Cleanup
+          document.body.removeChild(a);
+          URL.revokeObjectURL(blobUrl);
         },
         error: (error) => {
           console.error('Error downloading PDF:', error);
