@@ -188,13 +188,13 @@ export class MainComponent {
       const year_payment = this.selectedProperty.year_payment;
       // ----- rates -----
       this.selectedProperty.full_payment_one = this.currencyPipe.transform(
-        full_payment * 0.02,
+        full_payment,
         'AED ',
         'code',
         '1.2-2'
       );
       this.selectedProperty.year_payment_one = this.currencyPipe.transform(
-        year_payment * 0.02,
+        year_payment,
         'AED ',
         'code',
         '1.2-2'
