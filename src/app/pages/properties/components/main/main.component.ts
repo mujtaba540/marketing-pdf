@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { SelectComponent } from '../../../../ui-components/components/select/select.component';
 import {
   FormControl,
@@ -17,6 +17,9 @@ import { VILLAS } from '../../../../shared/constants/new-villa';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { PrintViewComponent } from '../print-view/print-view.component';
 import { Page3Component } from '../page-3/page-3.component';
+import { HttpService } from '../../../../shared/services/http.service';
+import { finalize, take } from 'rxjs';
+import { CurrencyPipe, DatePipe, DecimalPipe } from '@angular/common';
 
 @Component({
   selector: 'app-main',
@@ -31,10 +34,16 @@ import { Page3Component } from '../page-3/page-3.component';
     PrintViewComponent,
     Page3Component,
   ],
+  providers: [DatePipe, DecimalPipe, CurrencyPipe],
   templateUrl: './main.component.html',
   styleUrl: './main.component.scss',
 })
 export class MainComponent {
+  private httpService = inject(HttpService);
+  private datePipe = inject(DatePipe);
+  private decimalPipe = inject(DecimalPipe);
+  private currencyPipe = inject(CurrencyPipe);
+
   VILLAS = VILLAS;
   APPARTMENTS = APPARTMENTS;
   active = 1;
@@ -44,21 +53,29 @@ export class MainComponent {
   bookingDate!: any;
   selectedItemList!: any;
   radioOptions!: { value: string; label: string; name: string }[];
+  isLoading!: boolean;
 
   ngOnInit(): void {
     this.selectedItemList = APPARTMENTS;
     this.radioOptions = [
-      { value: 'appartment', label: 'Apartment', name: 'apt' },
+      { value: 'apartment', label: 'Apartment', name: 'apt' },
       { value: 'villa', label: 'Villa', name: 'villa' },
     ];
     this.setPropertyForm();
+
+    this.templateForm.get('propertyType')?.valueChanges.subscribe((value) => {
+      this.selectedProperty = {};
+      this.installmentsPlan = {};
+    });
   }
 
   setPropertyForm() {
     this.templateForm = new FormGroup({
       property: new FormControl(null, Validators.required),
       bookingDate: new FormControl(null, Validators.required),
-      propertyType: new FormControl('appartment', Validators.required),
+      propertyType: new FormControl('apartment', Validators.required),
+      addKFLogo: new FormControl(true),
+      addContactPage: new FormControl(false),
     });
   }
 
@@ -67,7 +84,56 @@ export class MainComponent {
   }
 
   openPrint() {
-    window.print();
+    this.isLoading = true;
+    const url = `generate-pdf`; // Ensure you're passing propertyName as well
+    const { propertyType, addKFLogo, addContactPage } =
+      this.templateForm.getRawValue();
+    this.httpService
+      .postBlob(
+        url,
+        {
+          ...this.selectedProperty,
+          ...this.installmentsPlan,
+          addKFLogo,
+          addContactPage,
+        },
+        { type: propertyType }
+      ) // Custom method that handles blob
+      .pipe(
+        take(1),
+        finalize(() => (this.isLoading = false))
+      )
+      .subscribe({
+        next: (blob) => {
+          const fileName = `sales-offer-${this.selectedProperty.unit_code}.pdf`;
+          const blobUrl = URL.createObjectURL(blob);
+
+          if (this.isMobileBrowser()) {
+            // For mobile browsers, open the PDF in a new tab
+            window.open(blobUrl, '_blank');
+            // The browser's built-in PDF viewer should handle download options
+          } else {
+            // For desktop browsers, trigger download via <a> tag
+            const link = document.createElement('a');
+            link.href = blobUrl;
+            link.download = fileName;
+            document.body.appendChild(link); // Append to the document
+            link.click();
+            document.body.removeChild(link); // Clean up the appended link
+            URL.revokeObjectURL(blobUrl); // Cleanup the blob URL
+          }
+        },
+        error: (error) => {
+          console.error('Error downloading PDF:', error);
+          // Handle error appropriately (e.g., show a notification)
+        },
+      });
+  }
+
+  isMobileBrowser(): boolean {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
   }
 
   onSubmit() {
@@ -76,17 +142,17 @@ export class MainComponent {
     } else {
       const { property, bookingDate, propertyType } =
         this.templateForm.getRawValue();
-      if (propertyType === 'appartment') {
+
+      if (propertyType === 'apartment') {
         this.selectedProperty = APPARTMENTS.find(
           (el: any) => el.unit_code === property
         );
         this.selectedProperty.isAppartment = true;
-        this.selectedProperty.propertyType = true
-          ? this.selectedProperty?.bedrooms.toLowerCase() ===
-            '5 bedroom'.toLowerCase()
+        this.selectedProperty.propertyType =
+          this.selectedProperty?.bedrooms.toLowerCase() ===
+          '5 bedroom'.toLowerCase()
             ? 'Penthouse'
-            : 'Appartment'
-          : '';
+            : 'Apartment';
       } else {
         this.selectedProperty = VILLAS.find(
           (el: any) => el.unit_code.toLowerCase() === property.toLowerCase()
@@ -96,8 +162,20 @@ export class MainComponent {
           this.selectedProperty?.type.split(' ')[0] ?? 'Villa';
 
         this.selectedProperty.total_sqft = this.selectedProperty.sqft ?? 0;
+        this.selectedProperty.bua_sqft = this.decimalPipe.transform(
+          10.7639 * this.selectedProperty?.bua,
+          '1.2-2'
+        );
+        this.selectedProperty.plot_area_sqft = this.decimalPipe.transform(
+          10.7639 * this.selectedProperty?.plot_area,
+          '1.2-2'
+        );
       }
 
+      this.selectedProperty.currentDate = this.datePipe.transform(
+        new Date(),
+        'dd/MM/yyyy'
+      );
       const baseDate = DateTime.fromISO(bookingDate);
       const totalPrice = parseNumber(this.selectedProperty?.full_payment);
       const totalPriceTwo = parseNumber(this.selectedProperty?.year_payment);
@@ -105,6 +183,35 @@ export class MainComponent {
         totalPrice,
         totalPriceTwo,
         baseDate
+      );
+      const full_payment = this.selectedProperty.full_payment;
+      const year_payment = this.selectedProperty.year_payment;
+      // ----- rates -----
+      this.selectedProperty.full_payment_one = this.currencyPipe.transform(
+        full_payment * 0.02,
+        'AED ',
+        'code',
+        '1.2-2'
+      );
+      this.selectedProperty.year_payment_one = this.currencyPipe.transform(
+        year_payment * 0.02,
+        'AED ',
+        'code',
+        '1.2-2'
+      );
+
+      // ----- table rates -----
+      this.selectedProperty.full_payment_table = this.currencyPipe.transform(
+        full_payment * 0.02,
+        'AED ',
+        'code',
+        '1.2-2'
+      );
+      this.selectedProperty.year_payment_table = this.currencyPipe.transform(
+        year_payment * 0.02,
+        'AED ',
+        'code',
+        '1.2-2'
       );
     }
   }
@@ -162,8 +269,11 @@ export class MainComponent {
           label: entry.label,
           monthsGap: entry.monthsGap,
           percentage: `${entry.percentage}%`,
-          amount: (inputPrice * entry.percentage) / 100,
-          date,
+          amount: this.decimalPipe.transform(
+            (inputPrice * entry.percentage) / 100,
+            '1.2-2'
+          ),
+          date: this.datePipe.transform(date, 'dd/MM/yyyy'),
         };
       });
     };

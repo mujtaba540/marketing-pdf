@@ -31,12 +31,27 @@
           <app-input [controlName]="getFormControl('bookingDate')" [name]="'bookingDate'" [type]="'date'"
             [label]="'Booking Date'" [placeholder]="'Enter booking date'" />
         </span>
+        <div>
+          <label class="fw-bold m-0">Additional Config</label>
+          <div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" formControlName="addKFLogo">
+              <label class="form-check-label" for="inlineCheckbox1">Show KF logo</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" formControlName="addContactPage">
+              <label class="form-check-label" for="inlineCheckbox2">Add Contact Page</label>
+            </div>
+
+          </div>
+        </div>
         <span class=" hstack gap-2 align-self-end pb-s">
           <app-button [label]="'Calculate'" [classList]="'btn-primary'" [icon]="'fa-solid fa-plus'"
             (onClick)="onSubmit()" />
-          <app-button [label]="'Preview'" [classList]="'btn-outline-danger'" [disabled]="!templateForm.valid"
-            [icon]="'fa-solid fa-plus'" [icon]="'bi bi-printer'" (onClick)="openPrint()" />
+          <app-button [label]="'Download'" [classList]="'btn-outline-danger'" [disabled]="!templateForm.valid"
+            [icon]="'fa-solid fa-plus'" [icon]="'bi bi-printer'" [showSpinner]="isLoading" (onClick)="openPrint()" />
         </span>
+        
       </form>
     </div>
 

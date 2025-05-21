@@ -12,7 +12,7 @@
 
     <div class="d-flex justify-content-end mb-2 ">
         <!-- <span>Property Reference No: ____________</span> -->
-        <span><strong>Date:</strong> {{getCurrentDate() | date: 'dd/MM/yyyy' }}</span>
+        <span><strong>Date:</strong> {{selectedProperty()?.currentDate }}</span>
     </div>
 
     <div class="bordered-box mb-2">
@@ -30,13 +30,13 @@
         <div class="row justify-content-between mb-2 " >
             <div class="col-md-6 hstack justify-content-between bg-dark">Plot Number: <p class="text-end mb-0">{{selectedProperty()?.unit_code}}</p></div>
             @if (!this.selectedProperty()?.isAppartment) {
-                <div class="col-md-6 hstack justify-content-between bg-dark">BUA: <p class="text-end mb-0">{{convertToSquareFeet(selectedProperty()?.bua)| number:'1.2-2'}}</p></div>
+                <div class="col-md-6 hstack justify-content-between bg-dark">BUA: <p class="text-end mb-0">{{selectedProperty()?.bua_sqft}}</p></div>
             }@else {
                 <div class="col-md-6 hstack justify-content-between bg-dark">Balcony Size: <p class="text-end mb-0">{{selectedProperty()?.bal_sqft}}</p></div>
             }
         </div>
         <div class="row justify-content-between mb-2 " >
-            <div class="col-md-6 hstack justify-content-between">{{selectedProperty()?.isAppartment?'Appartment':'Villa'}} Type: <p class="text-end mb-0">{{getPropertyType()}} </p></div>
+            <div class="col-md-6 hstack justify-content-between">{{selectedProperty()?.isAppartment?'Apartment':'Villa'}} Type: <p class="text-end mb-0">{{selectedProperty()?.propertyType}} </p></div>
             @if (this.selectedProperty()?.isAppartment) {
                 <div class="col-md-6 hstack justify-content-between">Total Area: <p class="text-end mb-0">{{selectedProperty()?.sqft}}</p></div>
             }@else {
@@ -53,7 +53,7 @@
         }
         <div class="row justify-content-between mb-2 " >
             @if (!this.selectedProperty()?.isAppartment) {
-                <div class="col-md-6 hstack justify-content-between bg-dark">Plot Area: <p class="text-end mb-0">{{convertToSquareFeet(selectedProperty()?.plot_area) | number:'1.2-2'}}</p></div>
+                <div class="col-md-6 hstack justify-content-between bg-dark">Plot Area: <p class="text-end mb-0">{{selectedProperty()?.plot_area_sqft}}</p></div>
             }
             <!-- <div class="col-md-6 hstack justify-content-between">50/50 Full Payment on Completion: <p class="text-end mb-0">{{selectedProperty()?.full_payment}}</p></div> -->
         </div>
@@ -63,10 +63,10 @@
     <div class="bordered-box mb-4">
         <div class="section-title">PAYMENT PLAN - 50/50</div>
         <div class="d-flex justify-content-between gap-1 align-item-center">
-            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.full_payment | currency:'AED ':'code':'1.2-2'}}</span>
-            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> {{2000 | currency:'AED ':'code':'1.2-2'}}</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.full_payment_one }}</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> AED {{2000}}</span>
             <span class="bg-dark fw-bold flex-grow-1 p-2">
-                <strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.full_payment) | currency:'AED ':'code':'1.2-2'}}
+                <strong>ADM fee 2%:</strong> {{selectedProperty()?.full_payment_table}}
                 <p class="mb-0 hint-text fw-lighter">*To be paid with booking fee</p>
             </span>
         </div>
@@ -84,9 +84,9 @@
                 @for (item of installmentsPlan()?.option1; track $index) {
                 <tr>
                     <td>{{item.label}}</td>
-                    <td>{{item.date | date: 'dd/MM/yyyy' }}</td>
+                    <td>{{item.date }}</td>
                     <td>{{item.percentage}}</td>
-                    <td>{{item.amount | number:'1.2-2'}}</td>
+                    <td>{{item.amount}}</td>
                 </tr>
                 
                 }
@@ -97,10 +97,10 @@
     <div class="bordered-box mb-4">
         <div class="section-title">PAYMENT PLAN - 70/30 PH</div>
         <div class="d-flex justify-content-between gap-1 align-item-center">
-            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.year_payment | currency:'AED ':'code':'1.2-2'}}</span>
-            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> {{2000 | currency:'AED ':'code':'1.2-2'}}</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Selling Price:</strong> {{selectedProperty()?.year_payment_one }}</span>
+            <span class="bg-dark fw-bold flex-grow-1 p-2"><strong>Admin Fee:</strong> AED {{2000 }}</span>
             <span class="bg-dark fw-bold flex-grow-1 p-2">
-                <strong>ADM fee 2%:</strong> {{getCalculatedAdmFee(selectedProperty()?.year_payment) | currency:'AED ':'code':'1.2-2'}}
+                <strong>ADM fee 2%:</strong> {{selectedProperty()?.year_payment_table}}
                 <p class="mb-0 hint-text fw-lighter">*To be paid with booking fee</p>
             </span>
         </div>
@@ -118,9 +118,9 @@
                 @for (item of installmentsPlan()?.option2; track $index) {
                     <tr>
                         <td>{{item.label}}</td>
-                        <td>{{item.date | date: 'dd/MM/yyyy' }}</td>
+                        <td>{{item.date }}</td>
                         <td>{{item.percentage}}</td>
-                        <td>{{item.amount | number:'1.2-2'}}</td>
+                        <td>{{item.amount}}</td>
                     </tr>
                     
                     }

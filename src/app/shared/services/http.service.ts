@@ -17,16 +17,30 @@ export class HttpService {
     );
   }
 
-  post<T>(
-    url: string,
-    body: T,
-    params?: Record<string, any>
-  ): Observable<T> {
+  getBlob(url: string, params?: Record<string, any>): Observable<Blob> {
+    return this.http.get(`${environment.BACKEND_URL}/${url}`, {
+      ...setQueryParams(params),
+      responseType: 'blob' as 'json',
+    }) as Observable<Blob>;
+  }
+
+  post<T>(url: string, body: T, params?: Record<string, any>): Observable<T> {
     return this.http.post<T>(
       `${environment.BACKEND_URL}/${url}`,
       body,
       setQueryParams(params)
     );
+  }
+
+  postBlob<T>(
+    url: string,
+    body: T,
+    params?: Record<string, any>
+  ): Observable<Blob> {
+    return this.http.post<T>(`${environment.BACKEND_URL}/${url}`, body, {
+      ...setQueryParams(params),
+      responseType: 'blob' as 'json',
+    }) as Observable<Blob>;
   }
 
   put<T>(url: string, body: T): Observable<T> {
