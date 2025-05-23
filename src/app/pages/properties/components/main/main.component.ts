@@ -53,6 +53,7 @@ export class MainComponent {
   bookingDate!: any;
   selectedItemList!: any;
   radioOptions!: { value: string; label: string; name: string }[];
+  brokerOptions!: { value: string; label: string; name: string }[];
   isLoading!: boolean;
 
   ngOnInit(): void {
@@ -60,6 +61,11 @@ export class MainComponent {
     this.radioOptions = [
       { value: 'apartment', label: 'Apartment', name: 'apt' },
       { value: 'villa', label: 'Villa', name: 'villa' },
+    ];
+    this.brokerOptions = [
+      { value: 'none', label: 'None', name: 'none' },
+      { value: 'oliver', label: 'Oliver Rubens', name: 'oliver' },
+      { value: 'diana', label: 'Diana Ameliushina', name: 'diana' },
     ];
     this.setPropertyForm();
 
@@ -75,7 +81,7 @@ export class MainComponent {
       bookingDate: new FormControl(null, Validators.required),
       propertyType: new FormControl('apartment', Validators.required),
       addKFLogo: new FormControl(true),
-      addContactPage: new FormControl(false),
+      brokderDetails: new FormControl('none'),
     });
   }
 
@@ -86,7 +92,7 @@ export class MainComponent {
   openPrint() {
     this.isLoading = true;
     const url = `generate-pdf`; // Ensure you're passing propertyName as well
-    const { propertyType, addKFLogo, addContactPage } =
+    const { propertyType, addKFLogo, brokderDetails } =
       this.templateForm.getRawValue();
     this.httpService
       .postBlob(
@@ -95,10 +101,10 @@ export class MainComponent {
           ...this.selectedProperty,
           ...this.installmentsPlan,
           addKFLogo,
-          addContactPage,
+          brokderDetails,
         },
         { type: propertyType }
-      ) // Custom method that handles blob
+      )
       .pipe(
         take(1),
         finalize(() => (this.isLoading = false))
@@ -112,25 +118,16 @@ export class MainComponent {
           a.href = blobUrl;
           a.download = fileName;
 
-          // Append to body and trigger click
           document.body.appendChild(a);
           a.click();
 
-          // Cleanup
           document.body.removeChild(a);
           URL.revokeObjectURL(blobUrl);
         },
         error: (error) => {
           console.error('Error downloading PDF:', error);
-          // Handle error appropriately (e.g., show a notification)
         },
       });
-  }
-
-  isMobileBrowser(): boolean {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    );
   }
 
   onSubmit() {
