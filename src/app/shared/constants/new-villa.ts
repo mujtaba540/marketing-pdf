@@ -11,10 +11,10 @@ export const VILLAS = [
     full_payment: 34367777,
     year_payment: 35316777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-1.jpeg',
     ],
   },
   {
@@ -29,10 +29,10 @@ export const VILLAS = [
     full_payment: 32495777,
     year_payment: 33393777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-2.jpeg',
     ],
   },
   {
@@ -47,10 +47,10 @@ export const VILLAS = [
     full_payment: 36873777,
     year_payment: 37891777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-3.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-3.jpeg',
     ],
   },
   {
@@ -65,10 +65,10 @@ export const VILLAS = [
     full_payment: 35096777,
     year_payment: 36065777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-4.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-4.jpeg',
     ],
   },
   {
@@ -83,10 +83,10 @@ export const VILLAS = [
     full_payment: 32746777,
     year_payment: 33650777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-5.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-5.jpeg',
     ],
   },
   {
@@ -101,10 +101,10 @@ export const VILLAS = [
     full_payment: 33455777,
     year_payment: 34379777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-6.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-6.jpeg',
     ],
   },
   {
@@ -119,10 +119,10 @@ export const VILLAS = [
     full_payment: 32034777,
     year_payment: 32919777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-7.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-7.jpeg',
     ],
   },
   {
@@ -137,10 +137,10 @@ export const VILLAS = [
     full_payment: 31638777,
     year_payment: 32512777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-8.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-8.jpeg',
     ],
   },
   {
@@ -155,10 +155,10 @@ export const VILLAS = [
     full_payment: 31467777,
     year_payment: 32336777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-9.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-9.jpeg',
     ],
   },
   {
@@ -173,10 +173,10 @@ export const VILLAS = [
     full_payment: 31590777,
     year_payment: 32462777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-10.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-10.jpeg',
     ],
   },
   {
@@ -191,10 +191,10 @@ export const VILLAS = [
     full_payment: 30149777,
     year_payment: 30981777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-11.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-11.jpeg',
     ],
   },
   {
@@ -209,10 +209,10 @@ export const VILLAS = [
     full_payment: 30149777,
     year_payment: 30981777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-12.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-12.jpeg',
     ],
   },
   {
@@ -227,10 +227,10 @@ export const VILLAS = [
     full_payment: 30149777,
     year_payment: 30981777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-13.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-13.jpeg',
     ],
   },
   {
@@ -245,10 +245,10 @@ export const VILLAS = [
     full_payment: 31489777,
     year_payment: 32359777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v2/4 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps/4b-14.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-v3/4 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/4-b/4b-maps-v2/4b-14.jpeg',
     ],
   },
   {
@@ -263,10 +263,10 @@ export const VILLAS = [
     full_payment: 43859777,
     year_payment: 45070777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-3.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-3.jpeg',
     ],
   },
   {
@@ -281,10 +281,10 @@ export const VILLAS = [
     full_payment: 46481777,
     year_payment: 47765777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-4.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-4.jpeg',
     ],
   },
   {
@@ -299,10 +299,10 @@ export const VILLAS = [
     full_payment: 44420777,
     year_payment: 45646777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-6.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-6.jpeg',
     ],
   },
   {
@@ -317,10 +317,10 @@ export const VILLAS = [
     full_payment: 44419777,
     year_payment: 45645777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-7.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-7.jpeg',
     ],
   },
   {
@@ -335,10 +335,10 @@ export const VILLAS = [
     full_payment: 44419777,
     year_payment: 45645777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-8.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-8.jpeg',
     ],
   },
   {
@@ -353,10 +353,10 @@ export const VILLAS = [
     full_payment: 44419777,
     year_payment: 45645777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-9.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-9.jpeg',
     ],
   },
   {
@@ -371,10 +371,10 @@ export const VILLAS = [
     full_payment: 48074777,
     year_payment: 49401777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-10.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-10.jpeg',
     ],
   },
   {
@@ -389,10 +389,10 @@ export const VILLAS = [
     full_payment: 45223777,
     year_payment: 46472777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-11.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-11.jpeg',
     ],
   },
   {
@@ -407,10 +407,10 @@ export const VILLAS = [
     full_payment: 38855777,
     year_payment: 39928777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-12.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-12.jpeg',
     ],
   },
   {
@@ -425,10 +425,10 @@ export const VILLAS = [
     full_payment: 38071777,
     year_payment: 39123777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-13.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-13.jpeg',
     ],
   },
   {
@@ -443,10 +443,10 @@ export const VILLAS = [
     full_payment: 38075777,
     year_payment: 39127777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-14.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-14.jpeg',
     ],
   },
   {
@@ -461,10 +461,10 @@ export const VILLAS = [
     full_payment: 37985777,
     year_payment: 39034777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-15.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-15.jpeg',
     ],
   },
   {
@@ -479,10 +479,10 @@ export const VILLAS = [
     full_payment: 37985777,
     year_payment: 39034777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-16.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-16.jpeg',
     ],
   },
   {
@@ -497,10 +497,10 @@ export const VILLAS = [
     full_payment: 37985777,
     year_payment: 39034777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-17.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-17.jpeg',
     ],
   },
   {
@@ -515,10 +515,10 @@ export const VILLAS = [
     full_payment: 39923777,
     year_payment: 41026777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-18.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-18.jpeg',
     ],
   },
   {
@@ -533,10 +533,10 @@ export const VILLAS = [
     full_payment: 39921777,
     year_payment: 41024777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-19.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-19.jpeg',
     ],
   },
   {
@@ -551,10 +551,10 @@ export const VILLAS = [
     full_payment: 39921777,
     year_payment: 41024777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-20.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-20.jpeg',
     ],
   },
   {
@@ -569,10 +569,10 @@ export const VILLAS = [
     full_payment: 39921777,
     year_payment: 41024777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-21.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-21.jpeg',
     ],
   },
   {
@@ -587,10 +587,10 @@ export const VILLAS = [
     full_payment: 39921777,
     year_payment: 41024777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-22.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-22.jpeg',
     ],
   },
   {
@@ -605,10 +605,10 @@ export const VILLAS = [
     full_payment: 42426777,
     year_payment: 43598777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-23.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-23.jpeg',
     ],
   },
   {
@@ -623,10 +623,10 @@ export const VILLAS = [
     full_payment: 42426777,
     year_payment: 43598777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-24.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-24.jpeg',
     ],
   },
   {
@@ -641,10 +641,10 @@ export const VILLAS = [
     full_payment: 41846777,
     year_payment: 43002777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-25.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-25.jpeg',
     ],
   },
   {
@@ -659,10 +659,10 @@ export const VILLAS = [
     full_payment: 41710777,
     year_payment: 42862777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-26.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-26.jpeg',
     ],
   },
   {
@@ -677,10 +677,10 @@ export const VILLAS = [
     full_payment: 39558777,
     year_payment: 40650777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-27.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-27.jpeg',
     ],
   },
   {
@@ -695,10 +695,10 @@ export const VILLAS = [
     full_payment: 47677777,
     year_payment: 48993777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-28.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-28.jpeg',
     ],
   },
   {
@@ -713,10 +713,10 @@ export const VILLAS = [
     full_payment: 41194777,
     year_payment: 42331777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-29.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-29.jpeg',
     ],
   },
   {
@@ -731,10 +731,10 @@ export const VILLAS = [
     full_payment: 38471777,
     year_payment: 39533777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-31.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-31.jpeg',
     ],
   },
   {
@@ -749,10 +749,10 @@ export const VILLAS = [
     full_payment: 39477777,
     year_payment: 40567777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-32.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-32.jpeg',
     ],
   },
   {
@@ -767,10 +767,10 @@ export const VILLAS = [
     full_payment: 40643777,
     year_payment: 41765777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-33.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-33.jpeg',
     ],
   },
   {
@@ -785,10 +785,10 @@ export const VILLAS = [
     full_payment: 41529777,
     year_payment: 42676777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v2/5 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps/5b-34.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-v3/5 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/5-b/5b-maps-v2/5b-34.jpeg',
     ],
   },
   {
@@ -803,10 +803,10 @@ export const VILLAS = [
     full_payment: 69583777,
     year_payment: 71505777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps/6b-11.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-11.jpeg',
     ],
   },
   {
@@ -821,10 +821,10 @@ export const VILLAS = [
     full_payment: 56408777,
     year_payment: 57966777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps/6b-12.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-12.jpeg',
     ],
   },
   {
@@ -839,10 +839,10 @@ export const VILLAS = [
     full_payment: 72103777,
     year_payment: 74094777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps/6b-13.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-13.jpeg',
     ],
   },
   {
@@ -857,10 +857,10 @@ export const VILLAS = [
     full_payment: 68963777,
     year_payment: 70867777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps/6b-14.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-14.jpeg',
     ],
   },
   {
@@ -875,10 +875,10 @@ export const VILLAS = [
     full_payment: 59943777,
     year_payment: 61599777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps/6b-15.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-15.jpeg',
     ],
   },
   {
@@ -893,10 +893,10 @@ export const VILLAS = [
     full_payment: 56526777,
     year_payment: 58087777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps/6b-16.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-16.jpeg',
     ],
   },
   {
@@ -911,10 +911,10 @@ export const VILLAS = [
     full_payment: 53029777,
     year_payment: 54493777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps/6b-17.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-17.jpeg',
     ],
   },
   {
@@ -929,10 +929,10 @@ export const VILLAS = [
     full_payment: 54508777,
     year_payment: 56013777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps/6b-18.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-18.jpeg',
     ],
   },
   {
@@ -947,10 +947,10 @@ export const VILLAS = [
     full_payment: 58860777,
     year_payment: 60485777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps/6b-19.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-19.jpeg',
     ],
   },
   {
@@ -965,10 +965,10 @@ export const VILLAS = [
     full_payment: 58891777,
     year_payment: 60517777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-0.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-1.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v2/6 Bedroom Villas SPA-images-2.JPG',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps/6b-20.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-20.jpeg',
     ],
   },
 ];
