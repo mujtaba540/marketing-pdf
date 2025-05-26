@@ -20,6 +20,7 @@ import { Page3Component } from '../page-3/page-3.component';
 import { HttpService } from '../../../../shared/services/http.service';
 import { finalize, take } from 'rxjs';
 import { CurrencyPipe, DatePipe, DecimalPipe } from '@angular/common';
+import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-main',
@@ -112,17 +113,20 @@ export class MainComponent {
       .subscribe({
         next: (blob) => {
           const fileName = `sales-offer-${this.selectedProperty.unit_code}.pdf`;
-          const blobUrl = URL.createObjectURL(blob);
+          // const fileName = `sales-offer-${this.selectedProperty.unit_code}.pdf`;
+          saveAs(blob, fileName); // will trigger correct behavior on mobile/desktop
 
-          const a = document.createElement('a');
-          a.href = blobUrl;
-          a.download = fileName;
+          // const blobUrl = URL.createObjectURL(blob);
 
-          document.body.appendChild(a);
-          a.click();
+          // const a = document.createElement('a');
+          // a.href = blobUrl;
+          // a.download = fileName;
 
-          document.body.removeChild(a);
-          URL.revokeObjectURL(blobUrl);
+          // document.body.appendChild(a);
+          // a.click();
+
+          // document.body.removeChild(a);
+          // URL.revokeObjectURL(blobUrl);
         },
         error: (error) => {
           console.error('Error downloading PDF:', error);
