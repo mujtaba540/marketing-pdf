@@ -1,3 +1,3 @@
 export const environment = {
-  BACKEND_URL: 'http://51.20.12.161/api',
+  BACKEND_URL: 'https://dev-sloth.pro/api',
 };
