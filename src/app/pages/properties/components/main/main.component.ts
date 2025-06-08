@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject, ViewChild } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { SelectComponent } from '../../../../ui-components/components/select/select.component';
 import {
   FormControl,
@@ -15,12 +15,12 @@ import { InputRadioComponent } from '../../../../ui-components/components/input-
 import { APPARTMENTS } from '../../../../shared/constants/new-apt';
 import { VILLAS } from '../../../../shared/constants/new-villa';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
-import { PrintViewComponent } from '../print-view/print-view.component';
+// import { PrintViewComponent } from '../print-view/print-view.component';
 import { Page3Component } from '../page-3/page-3.component';
 import { HttpService } from '../../../../shared/services/http.service';
 import { finalize, take } from 'rxjs';
 import { CurrencyPipe, DatePipe, DecimalPipe } from '@angular/common';
-import { saveAs } from 'file-saver';
+// import { saveAs } from 'file-saver';
 
 @Component({
   selector: 'app-main',
@@ -32,7 +32,7 @@ import { saveAs } from 'file-saver';
     Page2Component,
     InputRadioComponent,
     NgbNavModule,
-    PrintViewComponent,
+    // PrintViewComponent,
     Page3Component,
   ],
   providers: [DatePipe, DecimalPipe, CurrencyPipe],
@@ -55,7 +55,9 @@ export class MainComponent {
   selectedItemList!: any;
   radioOptions!: { value: string; label: string; name: string }[];
   brokerOptions!: { value: string; label: string; name: string }[];
+  pricingOptions!: { value: string; label: string; name: string }[];
   isLoading!: boolean;
+  selectedPricingPlan!: string;
 
   ngOnInit(): void {
     this.selectedItemList = APPARTMENTS;
@@ -68,7 +70,12 @@ export class MainComponent {
       { value: 'oliver', label: 'Oliver Rubens', name: 'oliver' },
       { value: 'diana', label: 'Diana Ameliushina', name: 'diana' },
     ];
+    this.pricingOptions = [
+      { value: 'fifty', label: '50/50', name: 'fifty' },
+      { value: 'seventy', label: '70/30 PH', name: 'seventy' },
+    ];
     this.setPropertyForm();
+    this.selectedPricingPlan = this.pricingOptions[0].value;
 
     this.templateForm.get('propertyType')?.valueChanges.subscribe((value) => {
       this.selectedProperty = {};
@@ -83,6 +90,7 @@ export class MainComponent {
       propertyType: new FormControl('apartment', Validators.required),
       addKFLogo: new FormControl(true),
       brokderDetails: new FormControl('none'),
+      pricingDetails: new FormControl('fifty'),
     });
   }
 
@@ -93,7 +101,7 @@ export class MainComponent {
   openPrint() {
     this.isLoading = true;
     const url = `generate-pdf`; // Ensure you're passing propertyName as well
-    const { propertyType, addKFLogo, brokderDetails } =
+    const { propertyType, addKFLogo, brokderDetails, pricingDetails } =
       this.templateForm.getRawValue();
     this.httpService
       .postBlob(
@@ -103,6 +111,7 @@ export class MainComponent {
           ...this.installmentsPlan,
           addKFLogo,
           brokderDetails,
+          pricingDetails,
         },
         { type: propertyType }
       )
@@ -113,20 +122,15 @@ export class MainComponent {
       .subscribe({
         next: (blob) => {
           const fileName = `sales-offer-${this.selectedProperty.unit_code}.pdf`;
-          // const fileName = `sales-offer-${this.selectedProperty.unit_code}.pdf`;
-          saveAs(blob, fileName); // will trigger correct behavior on mobile/desktop
 
-          // const blobUrl = URL.createObjectURL(blob);
-
-          // const a = document.createElement('a');
-          // a.href = blobUrl;
-          // a.download = fileName;
-
-          // document.body.appendChild(a);
-          // a.click();
-
-          // document.body.removeChild(a);
-          // URL.revokeObjectURL(blobUrl);
+          const blobUrl = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = blobUrl;
+          a.download = fileName;
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          URL.revokeObjectURL(blobUrl);
         },
         error: (error) => {
           console.error('Error downloading PDF:', error);
@@ -280,5 +284,9 @@ export class MainComponent {
     const option2 = calculate(schedules.option2, pricetwo);
 
     return { option1, option2 };
+  }
+
+  onPlanChange(event: any) {
+    this.selectedPricingPlan = event;
   }
 }

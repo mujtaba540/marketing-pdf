@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 
 @Component({
   selector: 'app-page-2',
@@ -9,4 +9,5 @@ import { Component, input } from '@angular/core';
 export class Page2Component {
   selectedProperty = input<any>();
   installmentsPlan = input<any>();
+  selectedPricingPlan = input<string>();
 }
