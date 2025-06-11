@@ -71,6 +71,7 @@ export class MainComponent {
       { value: 'diana', label: 'Diana Ameliushina', name: 'diana' },
     ];
     this.pricingOptions = [
+      { value: 'both', label: 'Both', name: 'both' },
       { value: 'fifty', label: '50/50', name: 'fifty' },
       { value: 'seventy', label: '70/30 PH', name: 'seventy' },
     ];
@@ -90,7 +91,7 @@ export class MainComponent {
       propertyType: new FormControl('apartment', Validators.required),
       addKFLogo: new FormControl(true),
       brokderDetails: new FormControl('none'),
-      pricingDetails: new FormControl('fifty'),
+      pricingDetails: new FormControl('both'),
     });
   }
 

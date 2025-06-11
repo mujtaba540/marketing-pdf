@@ -60,7 +60,7 @@
         <!-- <div class="mb-2 col-md-6 hstack justify-content-between">60/10/30 Post-Handover-2 YEAR PAYMENT PLAN: <p class="text-end mb-0">{{selectedProperty()?.year_payment}}</p></div> -->
     </div>
 
-    @if (selectedPricingPlan() === 'fifty') {
+    @if (selectedPricingPlan() === 'fifty' || selectedPricingPlan() ==='both') {
         <div class="bordered-box mb-4">
             <div class="section-title">PAYMENT PLAN - 50/50</div>
             <div class="d-flex justify-content-between gap-1 align-item-center">
@@ -96,7 +96,7 @@
         </div>
     }
 
-    @if (selectedPricingPlan() === 'seventy') {
+    @if (selectedPricingPlan() === 'seventy' || selectedPricingPlan() ==='both') {
         <div class="bordered-box mb-4">
             <div class="section-title">PAYMENT PLAN - 70/30 PH</div>
             <div class="d-flex justify-content-between gap-1 align-item-center">
