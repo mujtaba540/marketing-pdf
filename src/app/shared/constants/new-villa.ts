@@ -806,7 +806,7 @@ export const VILLAS = [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
       'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
       'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-11.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-4.jpeg',
     ],
   },
 
@@ -1005,7 +1005,7 @@ export const VILLAS = [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
       'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
       'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-11.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-21.jpeg',
     ],
   },
   {
@@ -1023,7 +1023,7 @@ export const VILLAS = [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-0.jpeg',
       'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-1.jpeg',
       'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-v3/6 Bedroom Villas SPA-images-2.jpeg',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-11.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/villas/6-b/6b-maps-v2/6b-22.jpeg',
     ],
   },
 ];
