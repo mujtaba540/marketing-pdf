@@ -68,7 +68,7 @@ export class MainComponent {
     this.brokerOptions = [
       { value: 'none', label: 'None', name: 'none' },
       { value: 'oliver', label: 'Oliver Rubens', name: 'oliver' },
-      { value: 'diana', label: 'Diana Ameliushina', name: 'diana' },
+      // { value: 'diana', label: 'Diana Ameliushina', name: 'diana' },
     ];
     this.pricingOptions = [
       { value: 'both', label: 'Both', name: 'both' },
