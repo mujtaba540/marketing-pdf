@@ -69,6 +69,7 @@ export class MainComponent {
       { value: 'none', label: 'None', name: 'none' },
       { value: 'oliver', label: 'Oliver Rubens', name: 'oliver' },
       { value: 'luna', label: 'Luna Farhat', name: 'luna' },
+      { value: 'michel', label: 'Michel Hansen', name: 'michel' },
     ];
     this.pricingOptions = [
       { value: 'both', label: 'Both', name: 'both' },
