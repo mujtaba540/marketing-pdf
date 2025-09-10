@@ -13,8 +13,8 @@ export const APPARTMENTS = [
     full_payment: 10477777,
     year_payment: 10767777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v5/apt-1.jpeg',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v3/apt-1.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v6/apt-1.png',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v4/apt-1.png',
     ],
   },
   {
@@ -31,8 +31,8 @@ export const APPARTMENTS = [
     full_payment: 16075777,
     year_payment: 16519777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v5/apt-2.jpeg',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v3/apt-2.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v6/apt-2.png',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v4/apt-2.png',
     ],
   },
   {
@@ -50,7 +50,7 @@ export const APPARTMENTS = [
     year_payment: 16671777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v5/apt-3.jpeg',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v3/apt-3.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v4/apt-3.png',
     ],
   },
   {
@@ -68,7 +68,7 @@ export const APPARTMENTS = [
     year_payment: 12801777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v5/apt-4.jpeg',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v3/apt-4.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v4/apt-4.png',
     ],
   },
   {
@@ -104,7 +104,7 @@ export const APPARTMENTS = [
     year_payment: 9350777,
     imgUrl: [
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v5/apt-101.jpeg',
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v3/apt-101.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v4/apt-101.png',
     ],
   },
   {
@@ -283,7 +283,7 @@ export const APPARTMENTS = [
     full_payment: 137232777,
     year_payment: 141022777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v5/apt-601.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v6/apt-601.png',
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v3/apt-601.jpeg',
     ],
   },
@@ -301,7 +301,7 @@ export const APPARTMENTS = [
     full_payment: 141010777,
     year_payment: 144904777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v5/apt-602.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v6/apt-602.png',
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v3/apt-602.jpeg',
     ],
   },
