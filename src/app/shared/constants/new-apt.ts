@@ -247,7 +247,7 @@ export const APPARTMENTS = [
     full_payment: 9997777,
     year_payment: 10273777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v5/apt-401.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v6/apt-401.png',
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v3/apt-401.jpeg',
     ],
   },
@@ -265,7 +265,7 @@ export const APPARTMENTS = [
     full_payment: 32464777,
     year_payment: 33361777,
     imgUrl: [
-      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v5/apt-502.jpeg',
+      'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-v6/apt-502.png',
       'https://sha-properties.s3.eu-north-1.amazonaws.com/apartments/apt-maps-v3/apt-502.jpeg',
     ],
   },
